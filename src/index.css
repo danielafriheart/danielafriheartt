@@ -4,7 +4,7 @@
 * {
   background-color: #1E1D22;
   color: white;
-  outline: 1px solid silver;
+  /* outline: 1px solid silver; */
 }
 
 /* font-family: 'Aclonica', sans-serif; */
@@ -18,13 +18,13 @@ body {
 }
 
 /* NavLink */
-.navLink::after {
+/* .navLink::after {
   @apply content-[''] bg-primary h-[0.1em] rounded-xl -bottom-[0.2em] left-0 absolute w-[0%]
 }
 
 .navLink:hover:after {
   @apply w-[100%] duration-300
-}
+} */
 
 @tailwind base;
 @tailwind components;
