@@ -8,7 +8,7 @@ import { ListItemButton } from '@mui/material';
 function Navbar() {
   return (
     <div className='fixed w-screen z-50'>
-      <div className="w-[80%] pt-[2em] mx-auto flex  ">
+      <div className="w-[80vw] pt-[2em] mx-auto flex  ">
 
         <Link to='/' className='text-gray'>Danielafriheart</Link>
 
