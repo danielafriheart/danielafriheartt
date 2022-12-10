@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.cdnfonts.com/css/aclonica');
 @import url('https://fonts.cdnfonts.com/css/quicksand');
 
@@ -5,8 +8,6 @@
   color: white;
   outline: 1px solid silver;
 }
-
-/* font-family: 'Aclonica', sans-serif; */
 
 body {
   margin: 0;
@@ -22,15 +23,14 @@ h2 {
   font-family: 'Aclonica', sans-serif;
 }
 
-/* NavLink */
-/* .navLink::after {
-  @apply content-[''] bg-primary h-[0.1em] rounded-xl -bottom-[0.2em] left-0 absolute w-[0%]
+.link::after {
+  @apply content-[''] bg-primary h-[0.1em] rounded-xl -bottom-[0.2em] left-0 absolute w-[50%]
 }
 
-.navLink:hover:after {
+.link:hover:after {
   @apply w-[100%] duration-300
-} */
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* .luminousity{
+  filter: invert(30%);
+} */
