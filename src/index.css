@@ -6,7 +6,7 @@
 
 * {
   color: white;
-  outline: 1px solid silver;
+  /* outline: 1px solid silver; */
 }
 
 body {
@@ -29,6 +29,11 @@ h2 {
 
 .link:hover:after {
   @apply w-[100%] duration-300
+}
+
+/* Sidenav social links */
+.line {
+  @apply content-[''] h-[15em] w-1 rounded-full mb-5
 }
 
 /* .luminousity{
