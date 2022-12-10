@@ -1,20 +1,20 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 // Icons =============================>>>>>>>>>>>>>
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { BsBehance } from 'react-icons/bs';
 import { ImLinkedin2 } from 'react-icons/im';
-// import {IoLogoFigma} from 'react-icons/io';
 // ====================================>>>>>>>>>>>>>
 
 function SideNav() {
     return (
         <div className='fixed z-10 flex flex-col items-center ml-10'>
-            <p className='line bg-gray'></p>
+            <p className='line bg-gray h-[15em] w-1 rounded-full mb-5'></p>
             <div className="flex flex-col gap-5">
-                <Link to='.com' className=''><GitHubIcon /></Link>
-                <Link to='.com' className=''><BsBehance fontSize='large' className='text-red-500'/></Link>
-                <Link to='.com' className=''><ImLinkedin2 fontSize='large' /></Link>
+                <a href='https://github.com/danielafriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><GitHubIcon size='1.5em' /></a>
+
+                <a href='https://www.behance.net/danielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><BsBehance size='1.5em' /></a>
+
+                <a href='https://www.linkedin.com/in/daniel-esuola/' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><ImLinkedin2 size='1.5em' /></a>
             </div>
 
         </div>

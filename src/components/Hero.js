@@ -16,7 +16,7 @@ function Hero() {
 
                     <div className="grid lg:grid-cols-2 w-full z-30  bottom-0">
                         <div className="gap-8 flex flex-col">
-                            <h1 className='text-6xl'>Esuola Daniel,</h1>
+                            <h1 className='text-6xl text-white'>Esuola Daniel,</h1>
                             <p className='text-gray'>
                                 Software Developer at <a href="https://edozzier.com/" rel="noopener noreferrer" target='_blank' className='text-primary link relative'>Edozzier</a> and Product Designer✨
                             </p>

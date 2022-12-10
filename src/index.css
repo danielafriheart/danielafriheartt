@@ -5,7 +5,6 @@
 @import url('https://fonts.cdnfonts.com/css/quicksand');
 
 * {
-  color: white;
   /* outline: 1px solid silver; */
 }
 
@@ -31,10 +30,10 @@ h2 {
   @apply w-[100%] duration-300
 }
 
-/* Sidenav social links */
-.line {
-  @apply content-[''] h-[15em] w-1 rounded-full mb-5
-}
+/* Socials */
+/* .socials {
+  color: black !important;
+} */
 
 /* .luminousity{
   filter: invert(30%);
