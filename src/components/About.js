@@ -4,10 +4,18 @@ import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import Skills from './Skills'
 //=============================>>>>>>>>>>>>
+//Images =======================>>>>>>>>>
+import rectangle26 from "../assets/img/rectangle26.png";
+import rectangle25 from "../assets/img/rectangle25.png";
+import dots1 from "../assets/img/dots1.png";
+//=============================>>>>>>>>>>>>
 
 function About() {
   return (
-    <div className='h-[100vh] py-20'>
+    <div className='md:h-[70vh] py-20 relative'>
+      <img src={rectangle26} alt="rectangle26" className='right-0 absolute' />
+      <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute' />
+      <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10' />
       <div className="grid md:grid-cols-2 h-full w-[80vw] mx-auto">
         <div>
           <div className="flex flex-col gap-8">
@@ -33,9 +41,11 @@ function About() {
           <button className='btn'>Read More <BsArrowRight className='text-white' /></button>
 
         </div>
-
-        <div className="md:pl-8">
-          <Skills />
+        
+        <div className='h-full flex items-center md:py-0 py-14'>
+          <div className="md:pl-8">
+            <Skills />
+          </div>
         </div>
 
       </div>

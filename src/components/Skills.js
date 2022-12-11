@@ -32,7 +32,7 @@ export default function Skills() {
         )
     })
     return (
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='grid grid-cols-2 gap-8'>
             {skill}
         </div>
     )
