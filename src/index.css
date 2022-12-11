@@ -17,6 +17,22 @@ body {
   background-color: #1E1D22;
 }
 
+/* Scroll bar customization */
+html::-webkit-scrollbar {
+  @apply w-1
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply bg-primary-100 rounded-full
+}
+html::-webkit-scrollbar-track {
+  @apply bg-background
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary rounded-full
+}
+
 h1,
 h2 {
   font-family: 'Aclonica', sans-serif;
@@ -30,6 +46,6 @@ h2 {
   @apply w-[100%] duration-300
 }
 
-.btn{
+.btn {
   @apply flex items-center gap-4 border border-primary text-white px-4 py-2 mt-8 hover:bg-btnHover hover:bg-opacity-20 transition-all duration-300
 }

@@ -2,6 +2,7 @@ import React from 'react'
 
 //Icons =======================>>>>>>>>>
 import { BsArrowRight } from 'react-icons/bs'
+import Skills from './Skills'
 //=============================>>>>>>>>>>>>
 
 function About() {
@@ -30,10 +31,11 @@ function About() {
           </div>
 
           <button className='btn'>Read More <BsArrowRight className='text-white' /></button>
-          
-        </div>
-        <div className="">
 
+        </div>
+
+        <div className="">
+          <Skills />
         </div>
       </div>
     </div>

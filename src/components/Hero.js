@@ -1,5 +1,4 @@
 import React from 'react'
-import SideNav from './SideNav';
 // Image =============================>>>>>>>>>>>>>
 import heroImg from "../assets/img/heroImg.png";
 // ===================================>>>>>>>>>>>>>

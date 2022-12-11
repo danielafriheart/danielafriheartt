@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom"
 // Icons =============================>>>>>>>>>>>>>>>>>>>>>>>>>
-import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
-import CloseTwoToneIcon from '@mui/icons-material/CloseTwoTone';
 import { RiMenu3Line } from 'react-icons/ri'
 //===================================>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -14,7 +12,7 @@ export default function Navbar() {
   return (
     <div className='fixed w-screen z-50'>
       <div className="w-[80vw] pt-[2em] mx-auto flex  ">
-        <Link to='/' className='text-white'>O k i k i o l a.</Link>
+        <Link to='/' className='text-white font-bold'>O k i k i o l a.</Link>
        
         <button className="ml-auto md:hidden" aria-controls='mobile-menu' aria-expanded='false'>
           <RiMenu3Line className='cursor-pointer text-white' size='1.5em' />
