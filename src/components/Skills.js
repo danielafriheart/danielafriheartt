@@ -5,20 +5,17 @@ export default function Skills() {
         {
             id: 1,
             title: 'Languages',
-            skill: 'Html5'
+            skill: ['Html5 ', ' CSS3', ' JavaScript', ' NodeJS']
         },
         {
             id: 2,
             title: 'Framewworks',
-            skill: 'Html5'
+            skill: ['ReactJS ', ' Express', ' Angular', ' Tailwind', ' Bootstrap', ' Sass']
         },
         {
             id: 3,
             title: 'Tools',
-            skill1: 'VSCode',
-            skill2: 'VSCode',
-            skill3: 'VSCode',
-            skill4: 'VSCode'
+            skill: ['VSCode ', ' Figma', ' Git', ' Font Awesome']
         },
         {
             id: 4,
@@ -28,13 +25,9 @@ export default function Skills() {
     ]
     const skill = skills.map(skillSet => {
         return (
-            <div className='text-white' key={skillSet.id}>
-                <p className='border'>{skillSet.title}</p>
-                <span className='flex gap-4'>
-                <p className='border'>{skillSet.skill1}</p>
-                <p className='border'>{skillSet.skill2}</p>
-                </span>
-                <p className='border'>{skillSet.skill3}</p>
+            <div className='text-white border border-gray'>
+                <p className='border-b border-gray p-2'>{skillSet.title}</p>
+                <p className='text-gray p-2'>{skillSet.skill}</p>
             </div>
         )
     })

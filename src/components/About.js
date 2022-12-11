@@ -34,9 +34,10 @@ function About() {
 
         </div>
 
-        <div className="">
+        <div className="md:pl-8">
           <Skills />
         </div>
+
       </div>
     </div>
   )
