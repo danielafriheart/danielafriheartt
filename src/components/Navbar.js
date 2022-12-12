@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from "react-router-dom"
 // Icons =============================>>>>>>>>>>>>>>>>>>>>>>>>>
-import { RiMenu3Line } from 'react-icons/ri'
+import { CgMenuRight } from 'react-icons/cg'
 import { BsBehance } from 'react-icons/bs';
 import { ImLinkedin2 } from 'react-icons/im';
 import { BsGithub } from 'react-icons/bs';
@@ -10,7 +10,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 
 export default function Navbar() {
-
+  
+  //Mobile Navigation Toggler=================>>>>>>>>
   const [open, setOpen] = useState(false);
 
   const handleNavOpen = () => {
@@ -20,7 +21,11 @@ export default function Navbar() {
 
   const handleNavClose = () => {
     setOpen(false);
+    // console.log(open);
   };
+  //Mobile Navigation Toggler=================>>>>>>>>
+
+
 
   return (
     <div className='fixed w-screen z-50'>
@@ -28,7 +33,7 @@ export default function Navbar() {
         <Link to='/' className='text-white font-bold'>O k i k i o l a.</Link>
 
         <button className="ml-auto md:hidden" aria-controls='mobile-menu' aria-expanded='false'>
-          <RiMenu3Line className={`${open === false ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavOpen} />
+          <CgMenuRight className={`${open === false ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavOpen} />
         </button>
 
         <ul className='ml-auto hidden md:flex'>
