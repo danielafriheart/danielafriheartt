@@ -49,3 +49,13 @@ h2 {
 .btn {
   @apply flex items-center gap-4 border border-primary text-white px-4 py-2 mt-8 hover:bg-btnHover hover:bg-opacity-20 transition-all duration-300
 }
+
+.glass{
+  /* From https://css.glass */
+background: rgba(0, 0, 0, .1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.3px);
+-webkit-backdrop-filter: blur(1.3px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
