@@ -33,33 +33,33 @@ export default function Navbar() {
 
         <ul className='ml-auto hidden md:flex'>
           <li className='gap-10 flex'>
-            <NavLink to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+            <NavLink activeClassName='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
               <span className='text-primary'>#</span> about
             </NavLink>
-            <Link to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+            <NavLink activeClassName='active' to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
               <span className='text-primary'>#</span> works
-            </Link>
-            <Link className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+            </NavLink>
+            <NavLink activeClassName='active' to='/c' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
               <span className='text-primary'>#</span> contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
 
       {/* Mobile Nav */}
-      <div className={`${open === true ? 'flex' : 'hidden'} h-screen glass top-0 absolute z-10 w-full md:hidden`} >
+      <div className={`${open === true ? 'flex' : 'hidden'} h-screen glass top-0 absolute z-10 w-full md:hidden transition-all duration-300`} >
         <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-full bg-background w-[70vw] shadow-2xl">
           <ul className=''>
             <li className='gap-10 flex flex-col text-4xl'>
-              <NavLink to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+              <NavLink activeClassName='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
                 <span className='text-primary'>#</span> about
               </NavLink>
-              <Link to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+              <NavLink activeClassName='active' to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
                 <span className='text-primary'>#</span> works
-              </Link>
-              <Link className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+              </NavLink>
+              <NavLink activeClassName='active' to='/c' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
                 <span className='text-primary'>#</span> contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
 
@@ -76,7 +76,7 @@ export default function Navbar() {
         </div>
 
         <div className="">
-          <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[4em]" aria-controls='mobile-menu' aria-expanded='false'>
+          <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[10%]" aria-controls='mobile-menu' aria-expanded='false'>
             <AiOutlineClose className={`${open === true ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavClose} />
           </button>
         </div>

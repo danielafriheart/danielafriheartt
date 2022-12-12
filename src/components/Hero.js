@@ -7,9 +7,9 @@ import heroImg from "../assets/img/heroImg.png";
 function Hero() {
     return (
         <>
-            <div className='flex justify-center items-end bg-gray-100 relative'>
+            <div className='flex justify-center items-end bg-gray-100 relative md:h-[100vh]'>
                 <div className="md:flex hidden rectangle h-full w-[20em] bg-primary-100 lg:right-[20em] md:right-[10em] sm:right-[5em] absolute z-10"></div>
-                <div className="w-[80vw] md:h-[100vh] mx-auto flex lg:items-end lg:mt-0 mt-[10em]">
+                <div className="w-[80vw] md:h-[70vh] mx-auto flex lg:items-end lg:mt-0 mt-[10em]">
                     <div className="grid md:grid-cols-2 w-full z-30  bottom-0">
                         <div className="gap-8 flex flex-col">
                             <h1 className='text-6xl text-white'>Esuola Daniel,</h1>
