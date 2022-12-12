@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from "react-router-dom"
 // Icons =============================>>>>>>>>>>>>>>>>>>>>>>>>>
 import { RiMenu3Line } from 'react-icons/ri'
@@ -10,6 +10,7 @@ import { BsGithub } from 'react-icons/bs';
 
 export default function Navbar() {
 
+  const [open, setOpen] = useState(true);
 
 
   return (
@@ -38,9 +39,9 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Nav */}
-      <div className="md:hidden h-screen shadow-2xl glass">
+      <div className="md:hidden h-screen glass top-0 absolute z-10 w-full">
 
-        <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-full bg-background w-[70vw]">
+        <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-full bg-background w-[70vw] shadow-2xl">
           <ul className=''>
             <li className='gap-10 flex flex-col text-4xl'>
               <NavLink to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
