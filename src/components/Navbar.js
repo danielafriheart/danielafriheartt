@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="w-[80vw] pt-[2em] mx-auto flex  ">
         <Link to='/' className='text-white font-bold'>O k i k i o l a.</Link>
 
-        <button className="ml-auto md:hidden" aria-controls='mobile-menu' aria-expanded='false'>
+        <button className="ml-auto md:hidden " aria-controls='mobile-menu' aria-expanded='false'>
           <CgMenuRight className={`${open === false ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavOpen} />
         </button>
 

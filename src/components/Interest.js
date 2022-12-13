@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Icons======>>>>>>>>>>>>>>>>>>>
-import { BsArrowRight } from 'react-icons/bs'
+// import { BsArrowRight } from 'react-icons/bs'
 //=================>>>>>>>>>>>
 //Images==============>>>>>>>>>>>>>>>>>
 import bgDots from "../assets/img/bgDots.png";

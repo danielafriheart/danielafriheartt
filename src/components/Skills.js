@@ -25,7 +25,7 @@ export default function Skills() {
     ]
     const skill = skills.map((skillSet, i) => {
         return (
-            <div className='text-white border border-gray'>
+            <div className='text-white md:border border-gray'>
                 <p className='border-b border-gray p-2'>{skillSet.title}</p>
                 <p key={i} className='text-gray p-2'>{skillSet.skill}</p>
             </div>
