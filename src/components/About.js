@@ -12,7 +12,7 @@ import dots1 from "../assets/img/dots1.png";
 
 function About() {
   return (
-    <div className='md:h-[70vh] py-20 relative'>
+    <div className='md:h-[80vh] py-20 relative'>
       <img src={rectangle26} alt="rectangle26" className='right-0 absolute' />
       <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute' />
       <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10' />
@@ -41,9 +41,9 @@ function About() {
           <button className='btn'>Read More <BsArrowRight className='text-white' /></button>
 
         </div>
-        
+
         <div className='h-full flex items-center md:py-0 py-14'>
-          <div className="md:pl-8">
+          <div className="md:pl-20">
             <Skills />
           </div>
         </div>

@@ -3,6 +3,7 @@ import React from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { BsBehance } from 'react-icons/bs';
 import { ImLinkedin2 } from 'react-icons/im';
+import { AiOutlineTwitter } from 'react-icons/ai';
 // ====================================>>>>>>>>>>>>>
 
 function SideNav() {
@@ -15,6 +16,8 @@ function SideNav() {
                 <a href='https://www.behance.net/danielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><BsBehance size='1.5em' /></a>
 
                 <a href='https://www.linkedin.com/in/daniel-esuola/' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><ImLinkedin2 size='1.5em' /></a>
+
+                <a href='https://twitter.com/DanielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><AiOutlineTwitter size='1.5em' /></a>
             </div>
 
         </div>

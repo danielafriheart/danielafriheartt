@@ -38,13 +38,13 @@ export default function Navbar() {
 
         <ul className='ml-auto hidden md:flex'>
           <li className='gap-10 flex'>
-            <NavLink activeClassName='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+            <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
               <span className='text-primary'>#</span> about
             </NavLink>
-            <NavLink activeClassName='active' to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+            <NavLink activeclassname='active' to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
               <span className='text-primary'>#</span> works
             </NavLink>
-            <NavLink activeClassName='active' to='/c' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+            <NavLink activeclassname='active' to='/c' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
               <span className='text-primary'>#</span> contact
             </NavLink>
           </li>
@@ -56,13 +56,13 @@ export default function Navbar() {
         <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-full bg-background w-[70vw] shadow-2xl">
           <ul className=''>
             <li className='gap-10 flex flex-col text-4xl'>
-              <NavLink activeClassName='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
+              <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
                 <span className='text-primary'>#</span> about
               </NavLink>
-              <NavLink activeClassName='active' to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
+              <NavLink activeclassname='active' to='/m' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
                 <span className='text-primary'>#</span> works
               </NavLink>
-              <NavLink activeClassName='active' to='/c' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
+              <NavLink activeclassname='active' to='/c' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
                 <span className='text-primary'>#</span> contact
               </NavLink>
             </li>
