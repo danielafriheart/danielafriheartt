@@ -10,7 +10,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 
 export default function Navbar() {
-  
+
   //Mobile Navigation Toggler=================>>>>>>>>
   const [open, setOpen] = useState(false);
 

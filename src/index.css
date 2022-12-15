@@ -6,6 +6,7 @@
 
 * {
   /* outline: 1px solid silver; */
+  user-select: red;
 }
 
 body {
