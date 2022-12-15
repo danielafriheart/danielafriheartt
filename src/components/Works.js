@@ -1,6 +1,7 @@
 import React from 'react'
 //images==============>>>>>>>>>>
 import bgDots from "../assets/img/dots.png";
+// import bgDots from "";
 //====================>>>>>>>>>
 
 export default function Works() {
@@ -12,7 +13,7 @@ export default function Works() {
             tool: 'Figma',
             title: 'iWallet',
             role: 'Front End Developer',
-            image: 'https://images.unsplash.com/photo-1645680827507-9f392edae51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+            // image: { require('../assets/img/projectImg/payBuddy.png') },
             link: '#'
         },
         {
