@@ -1,7 +1,7 @@
 import React from 'react'
 //images==============>>>>>>>>>>
 import bgDots from "../assets/img/dots.png";
-// import bgDots from "";
+// import payBuddy from "../assets/img/projectImg/payBuddy.png";
 //====================>>>>>>>>>
 
 export default function Works() {
@@ -18,7 +18,7 @@ export default function Works() {
         },
         {
             id: 2,
-            tool: 'Figma',
+            tool: 'Bootstrap',
             title: 'payBuddy',
             role: 'Front End Developer',
             image: 'https://images.unsplash.com/photo-1645680827507-9f392edae51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
@@ -44,14 +44,14 @@ export default function Works() {
     //return template for the selected project section
     const work = workList.map((workCard, i) => {
         return (
-            <div className='flex flex-col gap-3 md:mb-10'>
+            <div className='flex flex-col gap-2 md:mb-10'>
                 <img src={workCard.image} alt="img" />
                 <p className='text-gray'>{workCard.tool}</p>
                 <hr className='text-gray' />
                 <h2 className='text-white text-2xl'>{workCard.title}</h2>
-                <p className='text-gray'>{workCard.role}</p>
-                <div>
-                    <button className='btn'>Live</button>
+                <p className='text-gray'>Role: {workCard.role}</p>
+                <div className='flex'>
+                    <a href={workCard.link} rel='noreferrer noopener' className='btn'>Live</a>
                 </div>
             </div>
         )
