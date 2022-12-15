@@ -23,11 +23,11 @@ export default function Skills() {
             skill: 'MongoDB'
         },
     ]
-    const skill = skills.map((skillSet, index) => {
+    const skill = skills.map((skillSet, i) => {
         return (
-            <div className='text-white md:border border-gray'>
+            <div className='text-white md:border border-gray' key={i}>
                 <p className='border-b border-gray p-2'>{skillSet.title}</p>
-                <p key={index} className='text-gray p-2'>{skillSet.skill}</p>
+                <p key={i} className='text-gray p-2'>{skillSet.skill}</p>
             </div>
         )
     })

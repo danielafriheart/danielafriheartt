@@ -1,7 +1,6 @@
 import React from 'react'
 //images==============>>>>>>>>>>
 import bgDots from "../assets/img/dots.png";
-// import payBuddy from "../assets/img/projectImg/payBuddy.png";
 //====================>>>>>>>>>
 
 export default function Works() {
@@ -44,7 +43,7 @@ export default function Works() {
     //return template for the selected project section
     const work = workList.map((workCard, i) => {
         return (
-            <div className='flex flex-col gap-2 md:mb-10'>
+            <div className='flex flex-col gap-2 md:mb-10' key={i}>
                 <img src={workCard.image} alt="img" />
                 <p className='text-gray'>{workCard.tool}</p>
                 <hr className='text-gray' />
