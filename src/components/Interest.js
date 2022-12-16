@@ -37,6 +37,11 @@ export default function Interest() {
                                     <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-3xl text-xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}>Music
                                     </button>
                                 </li>
+
+                                <li>
+                                    <button className={`${tab === 3 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-3xl text-xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(3)}>Art
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -55,8 +60,14 @@ export default function Interest() {
                                 This is Music
                             </div>
                         }
+                        {
+                            tab === 3 &&
+                            <div>
+                                This is Art
+                            </div>
+                        }
                     </div>
-                    
+
                 </div>
             </div>
         </>

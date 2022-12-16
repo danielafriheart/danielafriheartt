@@ -12,7 +12,7 @@ import dots1 from "../assets/img/dots1.png";
 
 function About() {
   return (
-    <div className='md:h-[85vh] py-20 relative'>
+    <div className='md:h-[80vh] py-20 relative'>
       <img src={rectangle26} alt="rectangle26" className='right-0 absolute' />
       <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute' />
       <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10' />
