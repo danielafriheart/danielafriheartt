@@ -10,12 +10,12 @@ export default function Skills() {
         {
             id: 2,
             title: 'Framewworks',
-            skill: ['ReactJS ', ' Express', ' Angular', ' Tailwind', ' Bootstrap', ' Sass']
+            skill: ['ReactJS ', ' Express', ' Angular', ' TailwindCSS', ' Bootstrap', ' Sass']
         },
         {
             id: 3,
             title: 'Tools',
-            skill: ['VSCode ', ' Figma', ' Git', ' Font Awesome']
+            skill: ['VSCode ', ' Figma', ' Git', ' Photoshop']
         },
         {
             id: 4,
@@ -23,17 +23,19 @@ export default function Skills() {
             skill: 'MongoDB'
         },
     ]
-    const skill = skills.map((skillSet, i) => {
-        return (
-            <div className='text-white md:border border-gray' key={i}>
-                <p className='border-b border-gray p-2'>{skillSet.title}</p>
-                <p key={i} className='text-gray p-2'>{skillSet.skill}</p>
-            </div>
-        )
-    })
+
     return (
         <div className='grid grid-cols-2 gap-8'>
-            {skill}
+            {
+                skills.map((skillSet, i) => {
+                    return (
+                        <div className='text-white md:border border-gray border-opacity-25' key={i}>
+                            <p className='border-b border-gray border-opacity-25 p-2'>{skillSet.title}</p>
+                            <p key={i} className='text-gray p-2'>{skillSet.skill}</p>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

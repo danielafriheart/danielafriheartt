@@ -35,6 +35,10 @@ html::-webkit-scrollbar-thumb:hover {
   @apply rounded-full cursor-pointer
 }
 
+p {
+  @apply text-[1.15em]
+}
+
 h1,
 h2,
 .h2 {
@@ -42,7 +46,7 @@ h2,
 }
 
 .link::after {
-  @apply content-[''] bg-primary h-[0.1em] rounded-xl -bottom-[0.2em] left-0 absolute w-[50%]
+  @apply content-[''] bg-primary h-[0.1em] rounded-xl -bottom-[0.2em] left-0 absolute w-[35%]
 }
 
 .link:hover:after {
