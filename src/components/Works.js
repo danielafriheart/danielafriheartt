@@ -72,7 +72,7 @@ export default function Works() {
 
                 <div className='my-10'>
                     <h1 className='text-white md:text-5xl text-3xl mb-10'><span className='text-primary'>#</span> select-project</h1>
-                    <div className="grid md:grid-cols-3 gap-5 md:px-5 px-0">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-5 px-0">
                         {
                             //Template
                             workList.map((workCard, i) => {
@@ -95,17 +95,15 @@ export default function Works() {
                 {/* Small projects */}
                 <div>
                     <h1 className='text-white md:text-5xl text-3xl mb-10'><span className='text-primary'>#</span> small-projects</h1>
-                    <div className="grid md:grid-cols-3 gap-5 md:px-5 px-0">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-5 px-0">
                         {
                             //Small Projects
                             smallProjects.map((small, i) => {
                                 return (
                                     <div className='flex flex-col gap-2 md:mb-10 mb-5 hover:-translate-y-1 transition-all duration-300' key={i}>
-                                        {/* <img src={workCard.image} alt="img" /> */}
                                         <p className='text-gray'>{small.tool}</p>
                                         <hr className='text-gray' />
                                         <h2 className='text-white text-2xl'>{small.title}</h2>
-                                        {/* <p className='text-gray'>description: {small.description}</p> */}
                                         <div className='flex'>
                                             <a href={small.link} rel='noreferrer noopener' target='_blank' className='btn'>{small.type === 'ui' ? 'Figma' : 'View project'}<BsArrowRight /></a>
                                         </div>
