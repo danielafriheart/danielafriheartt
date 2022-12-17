@@ -38,12 +38,13 @@ function About() {
             </p>
           </div>
 
-          <button className='btn'>Read More <BsArrowRight className='text-white' /></button>
+          <button className='btn'>Read More <BsArrowRight className='' /></button>
 
         </div>
 
-        <div className='h-full flex items-center md:py-0 py-14'>
-          <div className="md:pl-20">
+        <div className='h-full flex flex-col items-center md:py-0 py-14'>
+          
+          <div className="md:pl-20 mt-auto">
             <Skills />
           </div>
         </div>

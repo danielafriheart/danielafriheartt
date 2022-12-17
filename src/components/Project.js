@@ -49,7 +49,7 @@ function Project() {
                     </div>
                     <div className="text-white flex flex-col justify-between">
                         <div className="flex">
-                            <NavLink to='/works' className='ml-auto hover:font-bold transition-all duration-300 flex items-center gap-3'>View all <BsArrowRight /></NavLink>
+                            <NavLink to='/works' className='ml-auto flex text-gray hover:text-white hover:font-bold transition-all duration-300flex items-center gap-3'>View all <BsArrowRight /></NavLink>
                         </div>
                         <div className="p-5 grid md:grid-cols-2 gap-5">
                             {
@@ -62,7 +62,7 @@ function Project() {
                                             <h2 className='text-white text-2xl'>{workCard.title}</h2>
                                             <p className='text-gray'>Role: {workCard.role}</p>
                                             <div className='flex'>
-                                                <a href={workCard.link} rel='noreferrer noopener' className='btn'>Live</a>
+                                                <a href={workCard.link} rel='noreferrer noopener' className='btn'>View project <BsArrowRight /></a>
                                             </div>
                                         </div>
                                     )
