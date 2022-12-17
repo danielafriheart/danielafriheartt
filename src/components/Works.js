@@ -46,13 +46,13 @@ export default function Works() {
                 </header>
 
                 <div className='my-10'>
-                    <h1 className='text-white md:text-5xl mb-10'><span className='text-primary'>#</span> select-project</h1>
-                    <div className="grid md:grid-cols-3 gap-5">
+                    <h1 className='text-white md:text-5xl text-3xl mb-10'><span className='text-primary'>#</span> select-project</h1>
+                    <div className="grid md:grid-cols-3 gap-5 md:px-5 px-0">
                         {
                             //Template
                             workList.map((workCard, i) => {
                                 return (
-                                    <div className='flex flex-col gap-2 md:mb-10 hover:-translate-y-1 transition-all duration-300' key={i}>
+                                    <div className='flex flex-col gap-2 md:mb-10 mb-5 hover:-translate-y-1 transition-all duration-300' key={i}>
                                         <img src={workCard.image} alt="img" />
                                         <p className='text-gray'>{workCard.tool}</p>
                                         <hr className='text-gray' />

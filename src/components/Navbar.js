@@ -70,8 +70,8 @@ export default function Navbar() {
           </ul>
 
           <div className='items-center'>
-            <div className="flex flex-row gap-8 text-2xl justify-center items-center">
-              <a href='https://github.com/danielafriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><BsGithub size='1.5em' /></a>
+            <div className="flex flex-col gap-8 md:text-2xl text-xl justify-center items-end">
+              <a href='https://github.com/danielafriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><BsGithub size='1.5em' /><p></p></a>
 
               <a href='https://www.behance.net/danielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><BsBehance size='1.5em' /></a>
 

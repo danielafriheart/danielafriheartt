@@ -51,11 +51,11 @@ function Project() {
                         <div className="flex">
                             <NavLink to='/works' className='ml-auto flex text-gray hover:text-white hover:font-bold transition-all duration-300flex items-center gap-3'>View all <BsArrowRight /></NavLink>
                         </div>
-                        <div className="p-5 grid md:grid-cols-2 gap-5">
+                        <div className="p-5 grid md:grid-cols-2 gap-5 md:px-5 px-0">
                             {
                                 workList.map((workCard, i) => {
                                     return (
-                                        <div className='flex flex-col gap-2 md:mb-10 hover:-translate-y-1 transition-all duration-300' key={i}>
+                                        <div className='flex flex-col gap-2 md:mb-0 mb-5 hover:-translate-y-1 transition-all duration-300' key={i}>
                                             <img src={workCard.image} alt="img" />
                                             <p className='text-gray'>{workCard.tool}</p>
                                             <hr className='text-gray' />
