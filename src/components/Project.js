@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { BsArrowRight } from "react-icons/bs";
+import bgDots from '../assets/img/dots.png'
 
 function Project() {
 
@@ -8,26 +9,28 @@ function Project() {
     const workList = [
         {
             id: 1,
-            tool: 'Figma',
+            type: 'web',
+            tool: ['JavaScript'],
             title: 'iWallet',
-            role: 'Front End Developer',
-            // image: { require('../assets/img/projectImg/payBuddy.png') },
-            image: 'https://images.unsplash.com/photo-1645680827507-9f392edae51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-            link: '#'
+            role: 'FullStack Developer',
+            image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671314695/portfolioImages/iWallet_qiyklj.png',
+            link: 'https://i-wallet.netlify.app/index.html'
         },
         {
             id: 2,
-            tool: 'Bootstrap',
-            title: 'payBuddy',
+            type: 'web',
+            tool: ['Open Weather Api,', ' ReactJS'],
+            title: 'Weather Checker',
             role: 'Front End Developer',
-            image: 'https://images.unsplash.com/photo-1645680827507-9f392edae51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-            link: '#'
-        }
+            image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671313000/portfolioImages/weatherappchecker.netlify.app__gtydsw.png',
+            link: 'https://weatherappchecker.netlify.app/'
+        },
     ]
 
     return (
-        <div>
+        <>
             <div className='md:h-[100vh] py-20 relative'>
+                <img src={bgDots} alt="bgDot" className='absolute -z-10 right-0 bottom-1/2' />
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">
@@ -62,7 +65,7 @@ function Project() {
                                             <h2 className='text-white text-2xl'>{workCard.title}</h2>
                                             <p className='text-gray'>Role: {workCard.role}</p>
                                             <div className='flex'>
-                                                <a href={workCard.link} rel='noreferrer noopener' className='btn'>View project <BsArrowRight /></a>
+                                                <a href={workCard.link} rel='noreferrer noopener' target='_blank' className='btn'>View project <BsArrowRight /></a>
                                             </div>
                                         </div>
                                     )
@@ -72,7 +75,7 @@ function Project() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
