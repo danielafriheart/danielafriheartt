@@ -13,7 +13,7 @@ export default function Footer() {
     <div className='py-10 relative'>
       <img src={bgDots} alt="bgDot" className='absolute -z-10 bottom-[50%] opacity-50' />
       <div className="w-[70vw] mx-auto text-center py-10 border-t border-primary-100 flex-col gap-8 flex">
-        <h2 className='text-white md:text-3xl text-2xl'>Connect with me ✨</h2>
+        <h2 className='text-white md:text-3xl text-2xl'>all-socials ✨</h2>
 
 
         <div className='items-center'>

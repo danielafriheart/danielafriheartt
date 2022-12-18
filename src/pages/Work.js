@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Connect from '../components/Connect'
 import Works from '../components/Works'
 
 export default function Work() {
@@ -10,6 +11,7 @@ export default function Work() {
     return (
         <>
             <Works />
+            <Connect />
         </>
     )
 }
