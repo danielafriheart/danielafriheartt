@@ -38,7 +38,7 @@ function About() {
             </p>
           </div>
 
-          <button className='btn'>Read More <BsArrowRight className='' /></button>
+          <button className='btn'>Request Cv <BsArrowRight className='' /></button>
 
         </div>
 

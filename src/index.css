@@ -60,6 +60,9 @@ h2,
 .btn {
   @apply flex items-center gap-4 border border-primary text-white px-4 py-2 mt-8 hover:bg-btnHover hover:bg-opacity-20 transition-all duration-300
 }
+.disabledBtn {
+  @apply flex items-center gap-4 border border-gray text-white px-4 py-2 mt-8  cursor-not-allowed
+}
 
 .glass {
   background: rgba(0, 0, 0, 0.2);

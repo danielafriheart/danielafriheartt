@@ -12,7 +12,7 @@ function Project() {
             type: 'web',
             tool: ['JavaScript'],
             title: 'iWallet',
-            role: 'FullStack Developer',
+            description: 'iWallet is a Financial Technology web application',
             image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671314695/portfolioImages/iWallet_qiyklj.png',
             link: 'https://i-wallet.netlify.app/index.html'
         },
@@ -20,8 +20,8 @@ function Project() {
             id: 2,
             type: 'web',
             tool: ['Open Weather Api,', ' ReactJS'],
-            title: 'Weather Checker',
-            role: 'Front End Developer',
+            title: 'Checker',
+            description: 'Uses open Weather Api to check weather conditions of anywhere around the world.',
             image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671313000/portfolioImages/weatherappchecker.netlify.app__gtydsw.png',
             link: 'https://weatherappchecker.netlify.app/'
         },
@@ -58,14 +58,14 @@ function Project() {
                             {
                                 workList.map((workCard, i) => {
                                     return (
-                                        <div className='flex flex-col gap-2 md:mb-0 mb-5 hover:-translate-y-1 transition-all duration-300' key={i}>
+                                        <div className='flex flex-col gap-2 md:mb-10 mb-5 hover:-translate-y-1 transition-all duration-300' key={i}>
                                             <img src={workCard.image} alt="img" />
                                             <p className='text-gray'>{workCard.tool}</p>
                                             <hr className='text-gray' />
                                             <h2 className='text-white text-2xl'>{workCard.title}</h2>
-                                            <p className='text-gray'>Role: {workCard.role}</p>
+                                            <p className='text-gray'>{workCard.description}</p>
                                             <div className='flex'>
-                                                <a href={workCard.link} rel='noreferrer noopener' target='_blank' className='btn'>View project <BsArrowRight /></a>
+                                                <a href={workCard.link} rel='noreferrer noopener' target='_blank' className='btn'>{workCard.type === 'ui' ? 'Figma' : 'View project'}<BsArrowRight /></a>
                                             </div>
                                         </div>
                                     )
