@@ -6,9 +6,35 @@ import rectangle26 from "../assets/img/rectangle26.png";
 import rectangle25 from "../assets/img/rectangle25.png";
 import dots1 from "../assets/img/dots1.png";
 import { TextField } from '@mui/material';
+import { withStyles } from '@mui/styles';
 //=============================>>>>>>>>>>>>
 
 export default function Connect() {
+    //declare the const and add the material UI style
+    const CssTextField = withStyles({
+        root: {
+            '& label': {
+                color: 'gray',
+            },
+            '& label.Mui-focused': {
+                color: 'gray',
+            },
+            '& .MuiInput-underline:after': {
+                borderBottomColor: 'gray',
+            },
+            '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                    borderColor: 'gray',
+                },
+                '&:hover fieldset': {
+                    borderColor: 'gray',
+                },
+                '&.Mui-focused fieldset': {
+                    borderColor: 'gray',
+                },
+            },
+        },
+    })(TextField);
     return (
         <>
             <div className='md:h-[65vh] py-20 relative'>
@@ -36,11 +62,44 @@ export default function Connect() {
                     <div className='h-full md:py-0 py-14 flex flex-col'>
                         <form action="#" className='text-white gap-5 flex flex-col mt-auto'>
                             <span className="flex gap-5">
-                                <TextField variant='outlined' id="outlined-required" label="Name" className='w-1/2' />
-                                <TextField variant='outlined' id="outlined-required" label="Email" className='w-1/2' />
+                                <CssTextField
+                                    required
+                                    label="Name"
+                                    className="name"
+                                    name="name"
+                                    // onChange={this.onChange}
+                                    type="text"
+                                    autoComplete="current-password"
+                                    margin="normal"
+                                    fullWidth
+                                    inputProps={{ style: { color: 'white' } }}
+                                />
+                                <CssTextField
+                                    required
+                                    label="Email"
+                                    className="email"
+                                    name="email"
+                                    // onChange={this.onChange}
+                                    type="text"
+                                    autoComplete="current-password"
+                                    margin="normal"
+                                    fullWidth
+                                    inputProps={{ style: { color: 'white' } }}
+                                />
                             </span>
-                            <TextField variant='outlined' id="outlined-required" label="Title" fullWidth />
-                            <TextField variant='outlined' id="outlined-required" label="Title" fullWidth />
+                            <CssTextField
+                                required
+                                label="Title"
+                                className="title"
+                                name="title"
+                                // onChange={this.onChange}
+                                type="text"
+                                autoComplete="current-password"
+                                margin="normal"
+                                fullWidth
+                                inputProps={{ style: { color: 'white' } }}
+                            />
+                            <textarea className='bg-transparent border-[#808080] border p-2 h-[10em] placeholder:text-[#808080] font-bold' placeholder='Message' color='white' />
                         </form>
                         <div className="">
                             <button className='btn'>send</button>
