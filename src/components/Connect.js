@@ -49,10 +49,6 @@ export default function Connect() {
                                 <h1 className='text-primary'>/</h1>
                                 <h2 className='text-white'>connect with me</h2>
                             </span>
-
-                            <p className='text-gray md:w-[85%]'>
-                                Who I am
-                            </p>
                             <p className='text-gray md:w-[85%]'>
                                 I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
                             </p>
@@ -60,8 +56,8 @@ export default function Connect() {
                     </div>
 
                     <div className='h-full md:py-0 py-14 flex flex-col'>
-                        <form action="#" className='text-white gap-5 flex flex-col mt-auto'>
-                            <span className="flex gap-5">
+                        <form action="#" className='text-white flex flex-col mt-auto'>
+                            <span className="md:flex lg:flex gap-3">
                                 <CssTextField
                                     required
                                     label="Name"
@@ -87,19 +83,21 @@ export default function Connect() {
                                     inputProps={{ style: { color: 'white' } }}
                                 />
                             </span>
-                            <CssTextField
-                                required
-                                label="Title"
-                                className="title"
-                                name="title"
-                                // onChange={this.onChange}
-                                type="text"
-                                autoComplete="current-password"
-                                margin="normal"
-                                fullWidth
-                                inputProps={{ style: { color: 'white' } }}
-                            />
-                            <textarea className='bg-transparent border-[#808080] border p-2 h-[10em] placeholder:text-[#808080] font-bold' placeholder='Message' color='white' />
+                            <span className="flex gap-3 flex-col">
+                                <CssTextField
+                                    required
+                                    label="Title"
+                                    className="title"
+                                    name="title"
+                                    // onChange={this.onChange}
+                                    type="text"
+                                    autoComplete="current-password"
+                                    margin="normal"
+                                    fullWidth
+                                    inputProps={{ style: { color: 'white' } }}
+                                />
+                                <textarea className='bg-transparent border-[#808080] border p-2 h-[7em] placeholder:text-[#808080] font-bold' placeholder='Message' color='white' />
+                            </span>
                         </form>
                         <div className="">
                             <button className='btn'>send</button>
