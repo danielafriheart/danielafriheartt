@@ -4,6 +4,7 @@ import React from 'react'
 //Images =======================>>>>>>>>>
 import rectangle26 from "../assets/img/rectangle26.png";
 import rectangle25 from "../assets/img/rectangle25.png";
+import bgDots from "../assets/img/bgDots.png";
 import dots1 from "../assets/img/dots1.png";
 import { TextField } from '@mui/material';
 import { withStyles } from '@mui/styles';
@@ -38,6 +39,7 @@ export default function Connect() {
     return (
         <>
             <div className='lg:h-[85vh] h-full py-20 relative'>
+            <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-30' />
                 <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-30' />
                 <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-30' />
                 <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10 opacity-30' />

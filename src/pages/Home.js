@@ -7,7 +7,7 @@ import Project from '../components/Project'
 
 export default function Home() {
     useEffect(() => {
-        document.title = 'O k i k i o l a | About'
+        document.title = 'Esuola Daniel | About'
     })
     return (
         <>
