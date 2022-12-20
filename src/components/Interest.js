@@ -12,7 +12,7 @@ export default function Interest() {
     return (
         <>
             <div className='lg:h-[85vh] h-full py-20 relative'>
-                <img src={bgDots} alt="" className='absolute md:bottom-20 bottom-52 md:left-20 opacity-30' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-30' />
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">

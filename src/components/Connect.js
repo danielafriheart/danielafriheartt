@@ -38,9 +38,9 @@ export default function Connect() {
     return (
         <>
             <div className='lg:h-[85vh] h-full py-20 relative'>
-                <img src={rectangle26} alt="rectangle26" className='right-0 absolute' />
-                <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute' />
-                <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10' />
+                <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-30' />
+                <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-30' />
+                <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10 opacity-30' />
 
                 <div className="grid md:grid-cols-2 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto md:gap-5">
                     <div>
