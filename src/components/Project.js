@@ -29,9 +29,9 @@ function Project() {
 
     return (
         <>
-            <div className='md:h-[100vh] py-20 relative'>
-                <img src={bgDots} alt="bgDot" className='absolute -z-10 right-0 bottom-1/2' />
-                <div className="grid md:grid-cols-[1fr,2fr] h-full w-[80vw] mx-auto">
+            <div className='lg:h-[85vh] h-full py-20 relative'>
+                <img src={bgDots} alt="bgDot" className='absolute -z-10 right-0 bottom-1/2 opacity-30' />
+                <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">
                             <header className='flex md:text-5xl text-3xl gap-3'>

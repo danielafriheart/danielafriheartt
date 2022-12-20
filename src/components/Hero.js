@@ -7,7 +7,7 @@ import heroImg from "../assets/img/heroImg.png";
 function Hero() {
     return (
         <>
-            <div className='flex justify-center items-end bg-gray-100 relative md:h-[100vh]'>
+            <div className='flex justify-center items-end bg-gray-100 relative lg:h-[100vh] h-full'>
                 <div className="md:flex hidden rectangle h-full w-[20em] bg-primary-100 lg:right-[20em] md:right-[10em] sm:right-[3em] absolute z-10"></div>
                 <div className=" w-[90vw] sm:w-[95vw] lg:w-[80vw] md:h-[70vh] lg:h-[70vh] sm:h-[75vh] mx-auto flex lg:items-end mt-[10em] md:mt-[10em] lg:mt-[5em] sm:mt-[5em]">
                     <div className="grid md:grid-cols-2 lg:grid-cols-2 w-full z-30 bottom-0">
