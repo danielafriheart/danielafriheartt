@@ -117,7 +117,7 @@ export default function Works() {
                     <p className='text-gray pt-3 md:w-[48%]'>A selected set of projects I’ve built with individuals and teams (the ones I can share).</p>
                 </header>
 
-                <div className=''>
+                <div className='mt-10'>
                     <h1 className='text-white md:text-5xl text-3xl mb-10'><span className='text-primary'>#</span> selected projects</h1>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-5 px-0">
                         {

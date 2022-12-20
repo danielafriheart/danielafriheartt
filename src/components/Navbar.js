@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <div className='fixed w-screen z-50'>
-      <div className="w-[80vw] pt-[2em] mx-auto flex  ">
+      <div className="w-[90vw] lg:w-[80vw] sm:w-[95vw] pt-[2em] mx-auto flex  ">
         <Link to='/' className='text-white font-bold'>O k i k i o l a.</Link>
 
         <button className="ml-auto md:hidden " aria-controls='mobile-menu' aria-expanded='false'>
@@ -85,7 +85,7 @@ export default function Navbar() {
         </div>
 
         <div className="">
-          <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[10%]" aria-controls='mobile-menu' aria-expanded='false'>
+          <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[6%]" aria-controls='mobile-menu' aria-expanded='false'>
             <AiOutlineClose className={`${open === true ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavClose} />
           </button>
         </div>

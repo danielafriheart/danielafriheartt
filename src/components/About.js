@@ -12,12 +12,12 @@ import dots1 from "../assets/img/dots1.png";
 
 function About() {
   return (
-    <div className='md:h-[85vh] py-20 relative'>
+    <div className='md:h-[85vh] sm:h-[100vh] py-20 relative'>
       <img src={rectangle26} alt="rectangle26" className='right-0 absolute' />
       <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute' />
       <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10' />
 
-      <div className="grid md:grid-cols-2 h-full w-[80vw] mx-auto">
+      <div className="grid md:grid-cols-2 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
         <div>
           <div className="flex flex-col gap-8">
             <span className='flex md:text-5xl text-3xl gap-3'>
@@ -44,7 +44,7 @@ function About() {
 
         <div className='h-full flex flex-col items-center md:py-0 py-14'>
           
-          <div className="md:pl-20 mt-auto">
+          <div className="md:pl-20 lg:pl-20 sm:pl-0 mt-auto">
             <Skills />
           </div>
         </div>

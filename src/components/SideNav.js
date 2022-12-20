@@ -8,7 +8,7 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 
 function SideNav() {
     return (
-        <div className='fixed z-40 flex-col items-center ml-8 pb-2 px-2 bg-background hidden md:flex'>
+        <div className='fixed z-40 flex-col items-center ml-8 pb-2 px-2 bg-background hidden lg:flex sm:hidden'>
             <div className='line bg-gray h-[15em] w-1 rounded-full mb-5'></div>
             <div className="flex flex-col gap-5">
                 <a href='https://github.com/danielafriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><GitHubIcon size='1.5em' /></a>

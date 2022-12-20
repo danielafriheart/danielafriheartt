@@ -11,7 +11,7 @@ export default function Interest() {
 
     return (
         <>
-            <div className='md:h-[100vh] py-20 relative'>
+            <div className='h-[100vh] py-20 relative'>
                 <img src={bgDots} alt="" className='absolute md:bottom-20 bottom-52 md:left-20 md:opacity-100 opacity-30' />
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[80vw] mx-auto">
                     <div>
