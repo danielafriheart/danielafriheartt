@@ -111,7 +111,7 @@ export default function Works() {
         <div className='py-20 relative'>
             <img src={bgDots} alt="bgDots" className='absolute z-[1]' />
 
-            <div className="w-[80vw] mx-auto">
+            <div className=" w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                 <header>
                     <h1 className='text-white text-3xl'><span className='text-primary'>/</span> works</h1>
                     <p className='text-gray pt-3 md:w-[48%]'>A selected set of projects I’ve built with individuals and teams (the ones I can share).</p>

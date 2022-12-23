@@ -63,7 +63,7 @@ export default function Navbar() {
               <NavLink activeclassname='active' to='/works' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
                 <span className='text-primary'>#</span> works
               </NavLink>
-              <NavLink activeclassname='active' to='/c' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
+              <NavLink activeclassname='active' to='/contact' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
                 <span className='text-primary'>#</span> contact
               </NavLink>
             </li>

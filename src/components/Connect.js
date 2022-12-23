@@ -60,7 +60,7 @@ export default function Connect() {
                         </div>
 
                         <div className='h-full md:py-0 py-14 flex flex-col'>
-                            <h1 className='text-gray opacity-40 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-7xl sm:text-5xl'>hello@daniel <br /> esuola.com</h1>
+                            <h1 className='text-gray opacity-40 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-7xl sm:text-5xl text-center'>hello@daniel <br /> esuola.com</h1>
                             {/* <form action="#" className='text-white flex flex-col mt-auto'>
                                 <span className="md:flex lg:flex gap-3">
                                     <CssTextField
