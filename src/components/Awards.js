@@ -27,7 +27,7 @@ export default function Awards() {
                         <div className="">
                             <table className='table-auto table w-full mt-36 text-left'>
                                 <thead className='text-white border-b border-primary-100 border-opacity-25'>
-                                    <tr className='text-2xl'>
+                                    <tr className='text-2xl w-full'>
                                         <th className='pb-5'>Project</th>
                                         <th className='pb-5'>Award / Platform</th>
                                         <th className='pb-5'>Year</th>
@@ -37,10 +37,10 @@ export default function Awards() {
                                     {
                                         awards.map((recognition, i) => {
                                             return (
-                                                <tr className="text-white py-5 border-b border-primary-100 border-opacity-25" key={i}>
-                                                    <td className='py-10'><p>{recognition.recognitionFor}</p></td>
-                                                    <td className='py-10'><p>{recognition.platform}</p></td>
-                                                    <td className='py-10'><p>{recognition.year}</p></td>
+                                                <tr className="py-5 border-b border-primary-100 border-opacity-25" key={i}>
+                                                    <td className='py-10'><p className=' text-gray'>{recognition.recognitionFor}</p></td>
+                                                    <td className='py-10'><p className=' text-gray'>{recognition.platform}</p></td>
+                                                    <td className='py-10'><p className=' text-gray'>{recognition.year}</p></td>
                                                 </tr>
                                             )
                                         })

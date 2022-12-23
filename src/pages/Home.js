@@ -8,8 +8,18 @@ import Project from '../components/Project'
 
 export default function Home() {
     useEffect(() => {
+        window.scrollTo(
+            {
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            }
+        );
         document.title = 'Esuola Daniel | About'
     })
+    // componentDidMount(() => {
+    //     window.scrollTo(0, 0);
+    // )}
     return (
         <>
             <Hero />

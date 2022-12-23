@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 p {
-  @apply text-[1.2em] lg:text-[1.2em] sm:text-[0.93em]
+  @apply text-[1.2em] lg:text-[1.2em] sm:text-[0.95em] text-white 
 }
 
 h1,
