@@ -8,7 +8,7 @@ export default function Contact() {
             leftL: 0,
             behavior: 'smooth'
         })
-        document.title = 'Esuola Daniel | Contact'
+        document.title = 'Daniel Esuola | Contact'
     })
     return (
         <>

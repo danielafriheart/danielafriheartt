@@ -15,7 +15,7 @@ export default function Home() {
                 behavior: 'smooth'
             }
         );
-        document.title = 'Esuola Daniel | About'
+        document.title = 'Daniel Esuola | About'
     })
     // componentDidMount(() => {
     //     window.scrollTo(0, 0);

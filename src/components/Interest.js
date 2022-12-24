@@ -12,14 +12,14 @@ export default function Interest() {
     return (
         <>
             <div className='lg:h-[85vh] h-full py-20 relative'>
-                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-30' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-20' />
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">
                             <span className='flex md:text-5xl text-3xl gap-3'>
                                 <h1 className='text-primary'>#</h1>
                                 <h2 className='text-white'>personal interests</h2>
-                                <p className='bg-primary w-full h-[1px] my-auto'></p>
+                                <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
                             </span>
                             {/* Captions for personal interst tabs will be dynamic depending on what tab user clicks */}
                             {
@@ -48,17 +48,17 @@ export default function Interest() {
                             {/* Tabs navigation for setting personal interest */}
                             <ul className='flex gap-3 flex-col'>
                                 <li>
-                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-3xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}>Gaming
+                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}>Gaming
                                     </button>
                                 </li>
 
                                 <li>
-                                    <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-3xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}>Music
+                                    <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}>Music
                                     </button>
                                 </li>
 
                                 <li>
-                                    <button className={`${tab === 3 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-3xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(3)}>Art
+                                    <button className={`${tab === 3 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(3)}>Art
                                     </button>
                                 </li>
                             </ul>

@@ -19,7 +19,7 @@ export default function Awards() {
                     <header className='flex md:text-5xl text-3xl gap-3'>
                         <h1 className='text-primary'>/</h1>
                         <h2 className='text-white w-full'>awards & recognitions</h2>
-                        <p className='bg-primary w-full h-[1px] my-auto'></p>
+                        <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
                     </header>
 
                     <div className="grid md:grid-cols-[20%,80%] ">

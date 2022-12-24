@@ -10,7 +10,7 @@ export default function Work() {
             left: 0,
             behavior: 'smooth'
         })
-        document.title = 'Esuola Daniel | Works'
+        document.title = 'Daniel Esuola | Works'
     })
     //====================>>>>>>>>>
     return (

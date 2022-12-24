@@ -40,17 +40,17 @@ export default function Connect() {
     return (
         <>
             <div className='lg:h-[65vh] h-full py-20 relative'>
-                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-30' />
-                <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-30' />
-                <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-30' />
-                <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10 opacity-30' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-32 opacity-20' />
+                <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-20' />
+                <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-20' />
+                <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10 opacity-20' />
 
                 {/* <div className="grid md:grid-cols-2 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto md:gap-5"> */}
                 <div className="h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <header className='flex md:text-5xl text-3xl gap-3'>
                         <h1 className='text-primary'>/</h1>
                         <h2 className='text-white w-full'>connect with me</h2>
-                        <p className='bg-primary w-full h-[1px] my-auto'></p>
+                        <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
                     </header>
                     <div className="grid md:grid-cols-2 mt-20 ">
                         <div>
@@ -60,7 +60,7 @@ export default function Connect() {
                         </div>
 
                         <div className='h-full md:py-0 py-14 flex flex-col'>
-                            <h1 className='text-gray opacity-40 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-7xl sm:text-5xl text-center'>hello@daniel <br /> esuola.com</h1>
+                            <a href='mailto:esuoladaniel002@gmail.com'target="_blank" rel='noopener noreferrer' type='email' className='text-white opacity-40 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-7xl sm:text-5xl text-center h2'>hello@daniel <br /> esuola.com</a>
                             {/* <form action="#" className='text-white flex flex-col mt-auto'>
                                 <span className="md:flex lg:flex gap-3">
                                     <CssTextField
