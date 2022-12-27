@@ -109,7 +109,7 @@ export default function Works() {
 
     return (
         <div className='py-20 relative'>
-            <img src={bgDots} alt="bgDots" className='absolute z-[1]' />
+            <img src={bgDots} alt="bgDots" className='absolute z-10 opacity-20 top-80' />
 
             <div className=" w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                 <header>

@@ -55,12 +55,12 @@ export default function Connect() {
                     <div className="grid md:grid-cols-2 mt-20 ">
                         <div>
                             <p className='text-gray md:w-[85%]'>
-                                I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
+                                I’m interested in freelance opportunities. However, if you have other requests or questions, don’t hesitate to contact me.
                             </p>
                         </div>
 
                         <div className='h-full md:py-0 py-14 flex flex-col'>
-                            <a href='mailto:esuoladaniel002@gmail.com'target="_blank" rel='noopener noreferrer' type='email' className='text-white opacity-40 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-7xl sm:text-5xl text-center h2'>hello@daniel <br /> esuola.com</a>
+                            <a href='mailto:esuoladaniel002@gmail.com' target="_blank" rel='noopener noreferrer' type='email' className='text-white opacity-70 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-7xl sm:text-5xl text-center h2'>hello@daniel <br /> esuola.com</a>
                             {/* <form action="#" className='text-white flex flex-col mt-auto'>
                                 <span className="md:flex lg:flex gap-3">
                                     <CssTextField

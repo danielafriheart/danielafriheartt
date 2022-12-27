@@ -30,8 +30,8 @@ export default function Navbar() {
 
   return (
     <div className='fixed w-screen z-50'>
-      <div className="w-[90vw] lg:w-[80vw] sm:w-[95vw] pt-[2em] mx-auto flex  ">
-        <Link to='/' className='text-white font-bold'>O k i k i o l a.</Link>
+      <div className="w-[90vw] lg:w-[80vw] sm:w-[95vw] pt-[2em] mx-auto flex">
+        <Link to='/' className='text-white font-bold'>D a n i e l.</Link>
 
         <button className="ml-auto md:hidden " aria-controls='mobile-menu' aria-expanded='false'>
           <CgMenuRight className={`${open === false ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavOpen} />
@@ -77,19 +77,15 @@ export default function Navbar() {
 
               <a href='https://www.linkedin.com/in/daniel-esuola/' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><ImLinkedin2 size='1.5em' /></a>
 
-            <a href='https://twitter.com/DanielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><AiOutlineTwitter size='1.5em' /></a>
-
+              <a href='https://twitter.com/DanielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><AiOutlineTwitter size='1.5em' /></a>
             </div>
-
           </div>
         </div>
-
         <div className="">
           <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[6%]" aria-controls='mobile-menu' aria-expanded='false'>
             <AiOutlineClose className={`${open === true ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavClose} />
           </button>
         </div>
-
       </div>
     </div>
   )
