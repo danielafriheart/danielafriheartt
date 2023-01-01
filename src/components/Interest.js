@@ -17,7 +17,10 @@ export default function Interest() {
     return (
         <>
             <div className='lg:h-[85vh] h-full py-20 relative'>
-                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-20' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-25' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-25' />
+                <h1 className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right'>Personal <br /> Interests</h1>
+                {/* <h1 className='text-white opacity-5 text-9xl absolute left-0 bottom-0'>Augumented Reality</h1> */}
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">
@@ -53,7 +56,7 @@ export default function Interest() {
                             {/* Tabs navigation for setting personal interest */}
                             <ul className='flex gap-3 flex-col'>
                                 <li>
-                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}>Ar & Vr
+                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}>Virtual Reality
                                     </button>
                                 </li>
 
@@ -72,7 +75,7 @@ export default function Interest() {
                     </div>
 
                     {/* section rendering based on what user choose to display */}
-                    <div className="text-white">
+                    <div className="text-primary-100">
                         <Canvas className='w-full h-full'>
                             <Suspense fallback={null}>
                                 <PerspectiveCamera makeDefault position={[15, 7, 11]} />
@@ -97,10 +100,10 @@ export default function Interest() {
                                         <ambientLight intensity={[5]} />
                                         <directionalLight
                                             castShadow
-                                            args={["#fff", 5]}
+                                            args={["#fff", 3]}
                                             position={[0, 10, 5]}
                                         />
-                                        <mesh position={[0, 0, 0]}>
+                                        <mesh position={[1, 1, 0]}>
                                             <Beats />
                                         </mesh>
                                     </>
