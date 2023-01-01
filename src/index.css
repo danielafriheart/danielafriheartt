@@ -4,9 +4,9 @@
 @import url('https://fonts.cdnfonts.com/css/aclonica');
 @import url('https://fonts.cdnfonts.com/css/quicksand');
 
-/* * {
-  outline: 1px solid silver;
-} */
+* {
+  /* outline: 1px solid silver; */
+}
 
 ::selection {
   background-color: silver;

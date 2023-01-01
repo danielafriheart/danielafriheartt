@@ -17,8 +17,8 @@ export default function Interest() {
     return (
         <>
             <div className='lg:h-[85vh] h-full py-20 relative'>
-                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-25' />
-                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-25' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-30' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-30' />
                 <div className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right h2'>Personal <br /> Interests</div>
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
@@ -32,13 +32,13 @@ export default function Interest() {
                             {
                                 tab === 1 &&
                                 <p className='text-gray'>
-                                    Most of my gaming time goes to FIFA. I often play Mortal Kombat, and a few others.
+                                    The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me. It is a technology that I am deeply interested in and am excited to see where it takes us in the future.
                                 </p>
                             }
                             {
                                 tab === 2 &&
                                 <p className='text-gray'>
-                                    Most of my Music time goes to FIFA. I often play Mortal Kombat, and a few others.
+                                  Music has the power to transport me to different worlds, lift my mood, and help me express myself in ways that words simply cannot. From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.
                                 </p>
                             }
                             {
@@ -96,7 +96,7 @@ export default function Interest() {
                                         <ambientLight intensity={[5]} />
                                         <directionalLight
                                             castShadow
-                                            args={["#fff", 3]}
+                                            args={["#fff", 2]}
                                             position={[0, 10, 5]}
                                         />
                                         <mesh position={[1, 1, 0]}>
