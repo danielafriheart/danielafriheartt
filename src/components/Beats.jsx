@@ -14,7 +14,7 @@ export function Beats(props) {
   const { nodes, materials } = useGLTF('/beats.gltf')
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 4, 0.2, 0]} scale={3}>
+      <group rotation={[-Math.PI / 4, 0.2, 0]} scale={2.9}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.chrome_logo} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.ear_cup} />
         <mesh geometry={nodes.Object_4.geometry} material={materials.plastic} />

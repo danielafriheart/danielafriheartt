@@ -20,7 +20,6 @@ export default function Interest() {
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-25' />
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-25' />
                 <h1 className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right'>Personal <br /> Interests</h1>
-                {/* <h1 className='text-white opacity-5 text-9xl absolute left-0 bottom-0'>Augumented Reality</h1> */}
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">
@@ -33,14 +32,12 @@ export default function Interest() {
                             {
                                 tab === 1 &&
                                 <p className='text-gray'>
-
                                     Most of my gaming time goes to FIFA. I often play Mortal Kombat, and a few others.
                                 </p>
                             }
                             {
                                 tab === 2 &&
                                 <p className='text-gray'>
-
                                     Most of my Music time goes to FIFA. I often play Mortal Kombat, and a few others.
                                 </p>
                             }
@@ -51,7 +48,6 @@ export default function Interest() {
                                 </p>
                             }
                             {/*End of Captions for personal interst tabs will be dynamic depending on what tab user clicks */}
-
 
                             {/* Tabs navigation for setting personal interest */}
                             <ul className='flex gap-3 flex-col'>
