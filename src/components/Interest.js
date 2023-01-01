@@ -19,7 +19,7 @@ export default function Interest() {
             <div className='lg:h-[85vh] h-full py-20 relative'>
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-25' />
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-20 opacity-25' />
-                <h1 className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right'>Personal <br /> Interests</h1>
+                <div className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right h2'>Personal <br /> Interests</div>
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">
