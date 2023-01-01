@@ -3,8 +3,8 @@ import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useState } from 'react'
 //Images==============>>>>>>>>>>>>>>>>>
 import bgDots from "../assets/img/bgDots.png";
-import { Beats } from './Beats';
-import { Vr } from './Vr';
+import { Beats } from '../models/Beats';
+import { Vr } from '../models/Vr';
 
 
 export default function Interest() {
