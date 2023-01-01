@@ -5,7 +5,6 @@
 @import url('https://fonts.cdnfonts.com/css/quicksand');
 
 * {
-  user-select: red;
   /* outline: 1px solid silver; */
 }
 
@@ -75,4 +74,10 @@ h2,
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
+}
+
+Canvas {
+  width: 100% !important;
+  height: 100% !important;
+  /* background-color: red !important; */
 }

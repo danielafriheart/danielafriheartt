@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import React, { Suspense, useState } from 'react'
 //Images==============>>>>>>>>>>>>>>>>>
 import bgDots from "../assets/img/bgDots.png";
+import { Vr } from './Vr';
+
 
 export default function Interest() {
 
@@ -48,7 +52,7 @@ export default function Interest() {
                             {/* Tabs navigation for setting personal interest */}
                             <ul className='flex gap-3 flex-col'>
                                 <li>
-                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}>Gaming
+                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}>Ar & Vr
                                     </button>
                                 </li>
 
@@ -67,25 +71,38 @@ export default function Interest() {
                     </div>
 
                     {/* section rendering based on what user choose to display */}
-                    <div className="text-white p-5">
-                        {
-                            tab === 1 &&
-                            <div>
-                                This is gaming
-                            </div>
-                        }
-                        {
-                            tab === 2 &&
-                            <div>
-                                This is Music
-                            </div>
-                        }
-                        {
-                            tab === 3 &&
-                            <div>
-                                This is Art
-                            </div>
-                        }
+                    <div className="text-white">
+                        <Canvas className='w-full h-full'>
+                            <Suspense fallback={null}>
+
+                                <PerspectiveCamera makeDefault position={[15, 7, 11]} />
+                                <OrbitControls enableZoom={false} />
+                                <ambientLight />
+                                <directionalLight
+                                    castShadow
+                                    color="white"
+                                    position={[0, 0, 5]}
+                                />
+                                {
+                                    tab === 1 &&
+                                    <mesh receiveShadow castShadow position={[0, 0, 0]}>
+                                        <Vr />
+                                    </mesh>
+                                }
+                                {/* {
+                                    tab === 2 &&
+                                    <mesh position={[0, 0, 0]}>
+                                        <Headphone />
+                                    </mesh>
+                                } */}
+                                {/* {
+                                    tab === 3 &&
+                                    <div>
+                                        This is Art
+                                    </div>
+                                } */}
+                            </Suspense>
+                        </Canvas>
                     </div>
 
                 </div>
