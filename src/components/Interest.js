@@ -38,7 +38,7 @@ export default function Interest() {
                             {
                                 tab === 2 &&
                                 <p className='text-gray'>
-                                  Music has the power to transport me to different worlds, lift my mood, and help me express myself in ways that words simply cannot. From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.
+                                    Music has the power to transport me to different worlds, lift my mood, and help me express myself in ways that words simply cannot. From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.
                                 </p>
                             }
                             {
@@ -74,8 +74,8 @@ export default function Interest() {
                     <div className="text-primary-100">
                         <Canvas className='w-full h-full'>
                             <Suspense fallback={null}>
-                                <PerspectiveCamera makeDefault position={[15, 7, 11]} />
-                                <OrbitControls enableZoom={false} />
+                                <PerspectiveCamera makeDefault position={[15, 7, 11]} fov={[50]} />
+                                <OrbitControls enableZoom={false} minPolarAngle={[0]} maxPolarAngle={[Math.PI / 2]} />
                                 {
                                     tab === 1 &&
                                     <>
