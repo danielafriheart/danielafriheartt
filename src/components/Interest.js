@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useState } from 'react'
 //Images==============>>>>>>>>>>>>>>>>>
 import bgDots from "../assets/img/bgDots.png";
+import { Beats } from './Beats';
 import { Vr } from './Vr';
 
 
@@ -74,27 +75,36 @@ export default function Interest() {
                     <div className="text-white">
                         <Canvas className='w-full h-full'>
                             <Suspense fallback={null}>
-
                                 <PerspectiveCamera makeDefault position={[15, 7, 11]} />
                                 <OrbitControls enableZoom={false} />
-                                <ambientLight />
-                                <directionalLight
-                                    castShadow
-                                    color="white"
-                                    position={[0, 0, 5]}
-                                />
                                 {
                                     tab === 1 &&
-                                    <mesh receiveShadow castShadow position={[0, 0, 0]}>
-                                        <Vr />
-                                    </mesh>
+                                    <>
+                                        <ambientLight />
+                                        <directionalLight
+                                            castShadow
+                                            color="white"
+                                            position={[0, 10, 5]}
+                                        />
+                                        <mesh receiveShadow castShadow position={[0, 0, 0]}>
+                                            <Vr />
+                                        </mesh>
+                                    </>
                                 }
-                                {/* {
+                                {
                                     tab === 2 &&
-                                    <mesh position={[0, 0, 0]}>
-                                        <Headphone />
-                                    </mesh>
-                                } */}
+                                    <>
+                                        <ambientLight intensity={[5]} />
+                                        <directionalLight
+                                            castShadow
+                                            args={["#fff", 5]}
+                                            position={[0, 10, 5]}
+                                        />
+                                        <mesh position={[0, 0, 0]}>
+                                            <Beats />
+                                        </mesh>
+                                    </>
+                                }
                                 {/* {
                                     tab === 3 &&
                                     <div>
