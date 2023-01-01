@@ -40,7 +40,7 @@ export default function Connect() {
     return (
         <>
             <div className='lg:h-[65vh] h-full py-20 relative'>
-                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-32 opacity-20' />
+                <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-32 opacity-20 z-10' />
                 <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-20' />
                 <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-20' />
                 <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10 opacity-20' />
@@ -52,15 +52,15 @@ export default function Connect() {
                         <h2 className='text-white w-full'>connect with me</h2>
                         <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
                     </header>
-                    <div className="grid md:grid-cols-2 mt-20 ">
+                    <div className="grid md:grid-cols-[1fr,2fr] mt-20 ">
                         <div>
-                            <p className='text-gray md:w-[85%]'>
+                            <p className='text-gray md:w-[80%]'>
                                 I’m interested in freelance opportunities. However, if you have other requests or questions, don’t hesitate to contact me.
                             </p>
                         </div>
 
                         <div className='h-full md:py-0 py-14 flex flex-col'>
-                            <a href='mailto:esuoladaniel002@gmail.com' target="_blank" rel='noopener noreferrer' type='email' className='text-white opacity-70 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-7xl sm:text-5xl text-center h2'>hello@daniel <br /> esuola.com</a>
+                            <a href='mailto:esuoladaniel002@gmail.com' target="_blank" rel='noopener noreferrer' type='email' className='text-white opacity-60 hover:opacity-100 underline transition-all duration-300 text-5xl lg:text-8xl sm:text-5xl text-right h2'>hello@daniel <br /> esuola.com</a>
                             {/* <form action="#" className='text-white flex flex-col mt-auto'>
                                 <span className="md:flex lg:flex gap-3">
                                     <CssTextField

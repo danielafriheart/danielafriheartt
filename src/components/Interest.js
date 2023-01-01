@@ -61,10 +61,10 @@ export default function Interest() {
                                     </button>
                                 </li>
 
-                                <li>
+                                {/* <li>
                                     <button className={`${tab === 3 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-2xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(3)}>Art
                                     </button>
-                                </li>
+                                </li> */}
                             </ul>
                             {/* End of Tabs navigation for setting personal interest */}
                         </div>
@@ -75,7 +75,7 @@ export default function Interest() {
                         <Canvas className='w-full h-full'>
                             <Suspense fallback={null}>
                                 <PerspectiveCamera makeDefault position={[15, 7, 11]} fov={[50]} />
-                                <OrbitControls enableZoom={false} minPolarAngle={[0]} maxPolarAngle={[Math.PI / 2]} />
+                                <OrbitControls enableZoom={false} minPolarAngle={[0]} maxPolarAngle={[1]} />
                                 {
                                     tab === 1 &&
                                     <>
