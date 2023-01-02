@@ -17,9 +17,7 @@ export default function Home() {
         );
         document.title = 'Daniel Esuola | About'
     })
-    // componentDidMount(() => {
-    //     window.scrollTo(0, 0);
-    // )}
+
     return (
         <>
             <Hero />

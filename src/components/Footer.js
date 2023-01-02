@@ -27,7 +27,7 @@ export default function Footer() {
 
           </div>
         </div>
-        <p className='text-sm text-gray'>Designed & Developed by Esuola Daniel</p>
+        <p className='text-[1em] text-gray'>Designed & Developed by Esuola Daniel</p>
       </div>
     </div>
   )
