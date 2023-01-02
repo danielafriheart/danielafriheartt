@@ -26,8 +26,6 @@ export default function Skills() {
 
     return (
         <div className='grid grid-cols-2 gap-8'>
-            <div className='text-white opacity-[3%] text-[10em] absolute right-20 top-20 text-right h2'>Skills</div>
-
             {
                 skills.map((skillSet, i) => {
                     return (

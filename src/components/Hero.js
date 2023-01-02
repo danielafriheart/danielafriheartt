@@ -4,7 +4,7 @@ import heroImg from "../assets/img/heroImg.png";
 // ===================================>>>>>>>>>>>>>
 
 
-function Hero() {
+export default function Hero() {
     return (
         <>
             <div className='flex justify-center items-end bg-gray-100 relative lg:h-[100vh] h-full'>
@@ -17,12 +17,10 @@ function Hero() {
                                 Software Developer at <a href="https://edozzier.com/" rel="noopener noreferrer" target='_blank' className='text-primary link relative'>Edozzier</a> and Product Designer✨
                             </p>
                             <p className='text-gray'>
-                                I'm a creative developer with years of experience in building products and appealing web experiences.
+                                I'm a wizard with code, conjuring up captivating product designs and crafting seamless web experiences. As a Software Developer, I specialize in frontend magic with React and have a touch of Angular in my arsenal. I strive to create inclusive and accessible apps that will blow your mind.
                             </p>
                             <p className='text-gray'>
-                                As a Software Engineer, I focus majorly on the frontend side of applications, with professional experience in
-                                React (and its frameworks) and basic experience with Angular.
-                                I also love building accessible applications, and playing with CSS.
+                                Oh, and don't even get me started on my CSS skills – they're totally bewitching.
                             </p>
                         </div>
                         <div className="flex items-end">
@@ -34,5 +32,3 @@ function Hero() {
         </>
     )
 }
-
-export default Hero

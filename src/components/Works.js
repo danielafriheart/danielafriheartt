@@ -12,7 +12,7 @@ export default function Works() {
         {
             id: 1,
             type: 'web',
-            tool: ['ReactJS,', ' TailwindCSS,', ' MUI' ],
+            tool: ['ReactJS,', ' TailwindCSS,', ' ThreeJS' ],
             title: 'Portfolio',
             description: 'You\'re using it rn :)',
             image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671366746/portfolioImages/portfolio_zgy8kb.png',

@@ -30,6 +30,8 @@ function Project() {
     return (
         <>
             <div className='lg:h-[85vh] h-full py-20 relative'>
+                <div className='text-white opacity-[2%] text-[10em] absolute left-20 top-0 text-right h2'>Projects</div>
+
                 <img src={bgDots} alt="bgDot" className='absolute -z-10 right-0 bottom-1/2 opacity-30' />
                 <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
@@ -40,13 +42,10 @@ function Project() {
                                 <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
                             </header>
                             <p className='text-gray'>
-                                A selected set of projects I’ve
-                                built with individuals and teams.
+                                Here are some of my most noteworthy endeavors, where I've had the pleasure of working with a diverse range of talented individuals and teams.
                             </p>
                             <p className='text-gray'>
-                                This is a mix of personal,
-                                collaborative and client owned
-                                projects.
+                                These projects range from personal endeavors to collaborations with clients.
                             </p>
                         </div>
                     </div>
