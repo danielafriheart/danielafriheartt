@@ -9,14 +9,20 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 
 
-function App() {
-  const [loading, setLoading] = useState(false); //set loader state false
+export default function App() {
+
+  const [loading, setLoading] = useState(false); //loader State
   useEffect(() => {
+
     setLoading(true);
+
     setTimeout(() => {
       setLoading(false);
-    }, 3000)
+    }, 3000) //3 Seconds
+
   }, []);
+
+
   return (
     <>
       {
@@ -37,5 +43,3 @@ function App() {
     </>
   )
 }
-
-export default App

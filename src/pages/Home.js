@@ -4,6 +4,7 @@ import About from '../components/About'
 import Connect from '../components/Connect'
 import Hero from '../components/Hero'
 import Interest from '../components/Interest'
+import Map from '../components/Map'
 import Project from '../components/Project'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
     return (
         <>
             <Hero />
+            <Map/>
             <About />
             <Interest />
             {/* <Awards /> */}

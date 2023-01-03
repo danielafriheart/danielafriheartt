@@ -7,8 +7,8 @@ export default function Preloader() {
     const year = date.getFullYear();
 
     return (
-        <div className='w-full h-screen lg:p-20 py-20 relative z-50 top-0'>
-            <div className='text-white opacity-[3%] md:text-[10em] text-[3em] absolute md:right-20 right-5 md:top-0 bottom-0 text-right h2'>" A Journey  <br />of Creativity <br /> & Exploration. "</div>
+        <div className='w-full h-screen lg:p-20 py-20 relative z-50 top-0 cursor-pointer bg-[#161616]'>
+            <div className='text-[#212025] md:text-[10em] text-[3em] absolute md:right-20 right-5 bottom-0 text-right h2'>" A Journey  <br />of Creativity <br /> & Exploration. "</div>
             <div className=" w-[85vw] sm:w-[95vw] lg:w-[90vw] mx-auto h-full flex flex-col justify-between">
                 <div>
                     <div className="h2 text-white text-3xl">
@@ -18,7 +18,6 @@ export default function Preloader() {
                         Portfolio <BiCopyright /> {year}
                     </div>
                 </div>
-
                 <div className='flex md:justify-start justify-center items-center'>
                     <HashLoader
                         color={'#CF95FC'}
@@ -27,12 +26,10 @@ export default function Preloader() {
                         data-testid="loader"
                     />
                 </div>
-
-                <div className="h2 text-background text-right">
+                <div className="h2 text-[#161616] text-right">
                     A journey of curiosity and exploration.
                 </div>
             </div>
         </div>
-
     )
 }

@@ -19,7 +19,7 @@ body {
   font-family: 'Quicksand Light', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1E1D22;
+  @apply bg-background
 }
 
 /* Scroll bar customization */
