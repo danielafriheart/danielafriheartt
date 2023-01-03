@@ -7,9 +7,9 @@ export default function Map() {
     const geoUrl = "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json"
 
     return (
-        <div className=' h-full relative pt-20'>
+        <div className='md:h-85vh h-full relative pt-20'>
             {/* <div className='text-white opacity-[2%] text-[10em] absolute left-20 top-10 text-left h2'>Based in <br /> Lagos.</div> */}
-            <div className="grid md:grid-cols-[1fr,2fr] h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto gap-10 md:gap-0">
+            <div className=" h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto gap-10 grid">
                 <div>
                     <div className="flex flex-col gap-8">
                         <span className='flex md:text-5xl text-3xl gap-3'>
@@ -23,19 +23,20 @@ export default function Map() {
                 <ComposableMap
                     projectionConfig={{
                         // rotate: [-10.0, -53.0, 0],
-                        center: [35, 25],
-                        scale: 400,
+                        center: [15, 5],
+                        scale: 350,
                     }}
+                    height={[300]}
                     className='cursor-pointer'
                 >
                     <Graticule stroke="#3e3e3e" width={[1]} />
-                    <Geographies geography={geoUrl} className='opacity-100'>
+                    <Geographies geography={geoUrl} className=''>
                         {({ geographies }) =>
                             geographies.map((geo) => (
                                 <Geography
                                     key={geo.rsmKey}
                                     geography={geo}
-                                    stroke={'#333'}
+                                    stroke={'#1E1D22'}
                                     style={{
                                         default: {
                                             fill: "#ABB2BF",
