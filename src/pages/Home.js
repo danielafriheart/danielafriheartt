@@ -22,11 +22,11 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <Map/>
             <About />
             <Interest />
             {/* <Awards /> */}
             <Project />
+            <Map />
             <Connect />
         </>
     )

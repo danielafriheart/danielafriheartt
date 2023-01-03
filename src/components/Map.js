@@ -1,35 +1,26 @@
 import React from 'react'
-import { ComposableMap, Geographies, Geography, Graticule, Marker } from 'react-simple-maps'
-import { GrMapLocation } from 'react-icons/gr'
+import { Annotation, ComposableMap, Geographies, Geography, Graticule, Marker } from 'react-simple-maps'
 
 export default function Map() {
 
     const geoUrl = "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json"
 
-    return (
-        <div className='md:h-85vh h-full relative pt-20'>
-            {/* <div className='text-white opacity-[2%] text-[10em] absolute left-20 top-10 text-left h2'>Based in <br /> Lagos.</div> */}
-            <div className=" h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto gap-10 grid">
-                <div>
-                    <div className="flex flex-col gap-8">
-                        <span className='flex md:text-5xl text-3xl gap-3'>
-                            <p className='text-primary'><GrMapLocation /></p>
-                            <h2 className='text-white'>Lagos, <br /> Nigeria</h2>
-                            <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
-                        </span>
 
-                    </div>
-                </div>
+    return (
+        <div className='md:h-85vh relative hidden md:flex'>
+            <div className=" h-full w-[85vw] sm:w-[95vw] lg:w-[100%] mx-auto gap-10 grid">
                 <ComposableMap
                     projectionConfig={{
                         // rotate: [-10.0, -53.0, 0],
                         center: [15, 5],
                         scale: 350,
                     }}
-                    height={[300]}
+                    // height={`${'md:' ? 400 : 600}`}
+                    // height={'md' ? 300 : 600}
+                    height={300}
                     className='cursor-pointer'
                 >
-                    <Graticule stroke="#3e3e3e" width={[1]} />
+                    <Graticule stroke="#333" width={[1]} />
                     <Geographies geography={geoUrl} className=''>
                         {({ geographies }) =>
                             geographies.map((geo) => (
@@ -39,7 +30,7 @@ export default function Map() {
                                     stroke={'#1E1D22'}
                                     style={{
                                         default: {
-                                            fill: "#ABB2BF",
+                                            fill: "#242328",
                                         },
                                         hover: {
                                             fill: "#9D84B8",
@@ -52,9 +43,24 @@ export default function Map() {
                             ))
                         }
                     </Geographies>
-                    <Marker coordinates={[6.465422, 3.406448]}>
-                        <circle r={8} fill='#CF95FC' />
+                    <Marker coordinates={[9.072264, 7.491302]}>
+                        <circle r={5} fill='#CF95FC' />
                     </Marker>
+                    <Annotation
+                        subject={[9.072264, 7.491302]}
+                        dx={-90}
+                        dy={-30}
+                        connectorProps={{
+                            stroke: "#CF95FC",
+                            strokeWidth: 1,
+                            strokeLinecap: "round",
+                        }}
+                        curve={1}
+                    >
+                        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#CF95FC">
+                            {"Lagos, Nigeria"}
+                        </text>
+                    </Annotation>
                 </ComposableMap>
             </div>
         </div >
