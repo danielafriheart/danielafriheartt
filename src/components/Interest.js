@@ -70,7 +70,7 @@ export default function Interest() {
                     <div className="text-primary-100 md:h-full h-[40vh]">
                         <Canvas className='w-full h-full'>
                             <Suspense fallback={null}>
-                                <PerspectiveCamera makeDefault position={[15, 7, 11]} fov={[50]} />
+                                <PerspectiveCamera makeDefault position={[7, -10, 17]} fov={[50]} />
                                 <OrbitControls enableZoom={false} minPolarAngle={[0]} maxPolarAngle={[1]} />
                                 {
                                     tab === 1 &&

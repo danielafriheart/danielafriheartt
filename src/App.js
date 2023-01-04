@@ -13,13 +13,10 @@ export default function App() {
 
   const [loading, setLoading] = useState(false); //loader State
   useEffect(() => {
-
     setLoading(true);
-
     setTimeout(() => {
       setLoading(false);
     }, 3000) //3 Seconds
-
   }, []);
 
 
