@@ -7,8 +7,8 @@ export default function Map() {
 
 
     return (
-        <div className='md:h-85vh relative'>
-            <div className='text-white opacity-[3%] text-[4.5em] md:text-[10em] absolute md:left-20 top-0 text-left h2 z-[1]'>Based in <br /> Lagos, Nigeria.</div>
+        <div className='h-85vh relative'>
+            <div className='text-white opacity-[3%] text-[4.5em] md:text-[10em] absolute md:left-20 top-0 text-left h2 z-10'>Based in <br /> Lagos, Nigeria.</div>
 
             <div className=" h-full w-[100%] mx-auto gap-10 grid z-20">
                 <ComposableMap

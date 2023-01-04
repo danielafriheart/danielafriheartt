@@ -16,10 +16,10 @@ export default function Interest() {
 
     return (
         <>
-            <div className='lg:h-[85vh] h-full py-20 relative'>
+            <div className='lg:h-[85vh] h-full pt-20 relative'>
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-30' />
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-52 opacity-10' />
-                <div className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right h2'>Personal <br /> Interests</div>
+                <div className='text-white opacity-[3%] text-[10em] absolute right-20 md:top-0 bottom-0 text-right h2'>Personal <br /> Interests</div>
                 <div className="grid md:grid-cols-[1fr,2fr] gap-10 md:gap-0 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col gap-8">
