@@ -7,23 +7,19 @@ export default function Map() {
 
 
     return (
-        <div className='md:h-85vh relative hidden md:flex'>
-            <div className='text-white opacity-[3%] text-[10em] absolute left-20 top-0 text-left h2 z-[1]'>Based in <br /> Lagos, Nigeria.</div>
+        <div className='md:h-85vh relative'>
+            <div className='text-white opacity-[3%] text-[4.5em] md:text-[10em] absolute md:left-20 top-0 text-left h2 z-[1]'>Based in <br /> Lagos, Nigeria.</div>
 
-            <div className=" h-full w-[85vw] sm:w-[95vw] lg:w-[100%] mx-auto gap-10 grid z-10">
+            <div className=" h-full w-[100%] mx-auto gap-10 grid z-20">
                 <ComposableMap
                     projectionConfig={{
-                        // rotate: [-10.0, -53.0, 0],
                         center: [15, 5],
                         scale: 350,
                     }}
-                    // height={`${'md:' ? 400 : 600}`}
-                    // height={'md' ? 300 : 600}
-                    height={300}
-                    className='cursor-pointer'
+                    className='cursor-pointer md:h-[100vh] w-[100%]'
                 >
                     <Graticule stroke="#333" width={[1]} />
-                    <Geographies geography={geoUrl} className=''>
+                    <Geographies geography={geoUrl}>
                         {({ geographies }) =>
                             geographies.map((geo) => (
                                 <Geography
