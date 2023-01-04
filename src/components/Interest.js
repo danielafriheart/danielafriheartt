@@ -5,6 +5,7 @@ import React, { Suspense, useState } from 'react'
 import bgDots from "../assets/img/bgDots.png";
 import { Beats } from '../models/Beats';
 import { Vr } from '../models/Vr';
+// import { Xbox } from '../models/Xbox';
 
 
 export default function Interest() {
@@ -60,6 +61,10 @@ export default function Interest() {
                                     <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}>Music
                                     </button>
                                 </li>
+                                {/* <li>
+                                    <button className={`${tab === 3 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(3)}>Gaming
+                                    </button>
+                                </li> */}
 
                             </ul>
                             {/* End of Tabs navigation for setting personal interest */}
@@ -102,9 +107,17 @@ export default function Interest() {
                                 }
                                 {/* {
                                     tab === 3 &&
-                                    <div>
-                                        This is Art
-                                    </div>
+                                    <>
+                                        <ambientLight />
+                                        <directionalLight
+                                            castShadow
+                                            args={["#fff"]}
+                                            position={[0, 10, 5]}
+                                        />
+                                        <mesh position={[0, 0, 0]}>
+                                            <Xbox />
+                                        </mesh>
+                                    </>
                                 } */}
                             </Suspense>
                         </Canvas>
