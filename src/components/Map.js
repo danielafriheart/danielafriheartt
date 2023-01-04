@@ -8,9 +8,9 @@ export default function Map() {
 
     return (
         <div className='md:h-85vh relative hidden md:flex'>
-            <div className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right h2'>Based in <br /> Lagos, Nigeria.</div>
+            <div className='text-white opacity-[3%] text-[10em] absolute left-20 top-0 text-left h2 z-[1]'>Based in <br /> Lagos, Nigeria.</div>
 
-            <div className=" h-full w-[85vw] sm:w-[95vw] lg:w-[100%] mx-auto gap-10 grid">
+            <div className=" h-full w-[85vw] sm:w-[95vw] lg:w-[100%] mx-auto gap-10 grid z-10">
                 <ComposableMap
                     projectionConfig={{
                         // rotate: [-10.0, -53.0, 0],
