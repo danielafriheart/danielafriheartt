@@ -7,9 +7,15 @@ import SideNav from './components/SideNav';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Work from './pages/Work';
+// Animate on scroll
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 export default function App() {
+  AOS.init();
+
 
   const [loading, setLoading] = useState(false); //loader State
   useEffect(() => {

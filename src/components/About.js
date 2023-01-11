@@ -21,7 +21,8 @@ export default function About() {
           <div className="flex flex-col gap-8">
             <span className='flex md:text-5xl text-3xl gap-3'>
               <h1 className='text-primary'>#</h1>
-              <h2 className='text-white'>passionate <br /> creative <br /> developer</h2>
+              <h2 className='text-white' data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="1000">passionate <br /> creative <br /> developer</h2>
               <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
             </span>
             <p className='text-gray md:w-[85%]'>
