@@ -5,7 +5,6 @@ import heroImg from "../assets/img/heroImg.png";
 
 
 export default function Hero() {
-
     return (
         <>
             <div className='flex justify-center items-end bg-gray-100 relative lg:h-[100vh] h-full'>
@@ -15,8 +14,7 @@ export default function Hero() {
                 <div className=" w-[90vw] sm:w-[95vw] lg:w-[80vw] md:h-[70vh] lg:h-[70vh] sm:h-[75vh] mx-auto flex lg:items-end mt-[10em] md:mt-[10em] lg:mt-[5em] sm:mt-[5em]">
                     <div className="grid md:grid-cols-2 lg:grid-cols-2 w-full z-30 bottom-0">
                         <div className="gap-8 lg:gap-8 sm:gap-2 flex flex-col">
-                            <h1 className='text-6xl lg:text-7xl sm:text-4xl text-white' data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" data-aos-duration="1500">Esuola Daniel,</h1>
+                            <h1 className='text-6xl lg:text-7xl sm:text-4xl text-white'>Esuola Daniel,</h1>
                             <p className='text-gray'>
                                 Software Developer at <a href="https://edozzier.com/" rel="noopener noreferrer" target='_blank' className='text-primary link relative'>Edozzier</a> and Product Designer✨
                             </p>
