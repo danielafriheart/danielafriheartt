@@ -14,7 +14,7 @@ export function Vr(props) {
   const { nodes, materials } = useGLTF('/vr.gltf')
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={1.7}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={1.3}>
         <group position={[-3.93, -3.86, -2.42]}>
           <mesh geometry={nodes.Object_3.geometry} material={materials.base} />
           <mesh geometry={nodes.Object_4.geometry} material={materials.black} />

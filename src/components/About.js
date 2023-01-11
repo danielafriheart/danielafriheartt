@@ -11,7 +11,7 @@ import dots1 from "../assets/img/dots1.png";
 
 export default function About() {
   return (
-    <div className='lg:h-[85vh] h-full py-20 relative'>
+    <div className='lg:h-screen h-full py-20 relative'>
       <div className='text-white opacity-[2%] text-[10em] absolute right-20 top-20 text-right h2'>Skills</div>
       <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-30' />
       <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-30' />
