@@ -63,7 +63,7 @@ function Project() {
                                             <hr className='text-gray' />
                                             <h2 className='text-white text-2xl'>{workCard.title}</h2>
                                             <p className='text-gray'>{workCard.description}</p>
-                                            <div className='flex'>
+                                            <div className='flex'>            
                                                 <a href={workCard.link} rel='noreferrer noopener' target='_blank' className='btn'>{workCard.type === 'ui' ? 'Figma' : 'View project'}<BsArrowRight /></a>
                                             </div>
                                         </div>
