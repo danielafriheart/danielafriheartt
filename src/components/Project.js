@@ -53,7 +53,7 @@ function Project() {
                         <div className="flex">
                             <NavLink to='/works' className='ml-auto flex text-gray hover:text-white hover:font-bold transition-all duration-300flex items-center gap-3'>View all <BsArrowRight /></NavLink>
                         </div>
-                        <div className="p-5 grid md:grid-cols-2 gap-5 md:px-5 px-0">
+                        <div className="p-5 place-content-end grid md:grid-cols-2 gap-5 md:px-5 px-0">
                             {
                                 workList.map((workCard, i) => {
                                     return (

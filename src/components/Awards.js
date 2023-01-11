@@ -10,6 +10,12 @@ export default function Awards() {
             platform: 'FreeCodeCamp',
             recognitionFor: 'Responsive Web Design'
         },
+        {
+            id: 1,
+            year: 2022,
+            platform: 'FreeCodeCamp',
+            recognitionFor: 'Responsive Web Design'
+        },
     ];
     //=============================================>>>>>>>>>>>>>>
     return (
