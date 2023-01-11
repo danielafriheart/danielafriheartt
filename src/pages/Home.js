@@ -26,7 +26,7 @@ export default function Home() {
             <Interest />
             {/* <Awards /> */}
             <Project />
-            <Map />
+            {/* <Map /> */}
             <Connect />
         </>
     )
