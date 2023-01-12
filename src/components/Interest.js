@@ -5,6 +5,9 @@ import React, { Suspense, useState } from 'react'
 import bgDots from "../assets/img/bgDots.png";
 import { Beats } from '../models/Beats';
 import { Vr } from '../models/Vr';
+import gsap from 'gsap';
+import SplitType from 'split-type';
+
 
 
 export default function Interest() {
@@ -12,7 +15,9 @@ export default function Interest() {
     //Tab=================>>>>>>>>>>>
     const [tab, setNewTab] = useState(1);
     //====================>>>>>>>>>>>
-
+    //Split type
+    const splitedText = new SplitType('#split')
+    // gsap.to()
 
     return (
         <>
@@ -20,12 +25,12 @@ export default function Interest() {
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-30' />
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-52 opacity-10' />
                 <div className='text-white opacity-[3%] text-[10em] absolute right-20 md:top-0 bottom-0 text-right h2'>Personal <br /> Interests</div>
-                <div className="grid md:grid-cols-[1fr,2fr] gap-10 md:gap-0 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
+                <div className="grid md:grid-cols-[1fr,2fr] gap-0 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
-                        <div className="flex flex-col justify-between gap-8 pb-32">
+                        <div className="flex flex-col justify-between gap-8 md:pb-32">
                             <span className='flex md:text-5xl text-3xl gap-3 mb-10'>
                                 <h1 className='text-primary'>#</h1>
-                                <h2 className='text-white'>personal interests</h2>
+                                <h2 className='text-white' id='split'>personal interests</h2>
                                 <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
                             </span>
 

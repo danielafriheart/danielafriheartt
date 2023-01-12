@@ -16,8 +16,9 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000) //3 Seconds
+    }, 3000) //3 Seconds timeout
   }, []);
+
 
 
   return (
