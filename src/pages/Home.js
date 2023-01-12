@@ -23,8 +23,8 @@ export default function Home() {
         <>
             <Hero />
             <About />
-            <Interest />
             <Awards />
+            <Interest />
             <Project />
             {/* <Map /> */}
             <Connect />
