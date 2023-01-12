@@ -10,12 +10,6 @@ export default function Awards() {
             platform: 'FreeCodeCamp',
             recognitionFor: 'Responsive Web Design'
         },
-        {
-            id: 1,
-            year: 2022,
-            platform: 'FreeCodeCamp',
-            recognitionFor: 'Responsive Web Design'
-        },
     ];
     //=============================================>>>>>>>>>>>>>>
     return (
@@ -31,22 +25,22 @@ export default function Awards() {
                     <div className="grid md:grid-cols-[20%,80%] ">
                         <div className=""></div>
                         <div className="">
-                            <table className='table-auto table w-full mt-36 text-left'>
+                            <table className='table-auto table w-full lg:mt-32 text-left'>
                                 <thead className='text-white border-b border-primary-100 border-opacity-25'>
-                                    <tr className='text-2xl w-full'>
-                                        <th className='pb-5'>Project</th>
-                                        <th className='pb-5'>Award / Platform</th>
-                                        <th className='pb-5'>Year</th>
+                                    <tr className='text-2xl w-full  hidden md:flex justify-between'>
+                                        <th className='pb-5 w-full'>Project</th>
+                                        <th className='pb-5 w-full lg:text-center'>Award / Platform</th>
+                                        <th className='pb-5 w-full text-end'>Year</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody className='w-full'>
                                     {
                                         awards.map((recognition, i) => {
                                             return (
-                                                <tr className="py-5 border-b border-primary-100 border-opacity-25" key={i}>
-                                                    <td className='py-10'><p className=' text-gray'>{recognition.recognitionFor}</p></td>
-                                                    <td className='py-10'><p className=' text-gray'>{recognition.platform}</p></td>
-                                                    <td className='py-10'><p className=' text-gray'>{recognition.year}</p></td>
+                                                <tr className=" border-b border-primary-100 border-opacity-25 flex md:flex-row flex-col w-full justify-between lg:py-0 py-10" key={i}>
+                                                    <td className='lg:py-10 w-full'><p className=' text-gray'>{recognition.recognitionFor}</p></td>
+                                                    <td className='lg:py-10 w-full lg:text-center'><p className=' text-gray'>{recognition.platform}</p></td>
+                                                    <td className='lg:py-10 w-full lg:text-end'><p className=' text-gray'>{recognition.year}</p></td>
                                                 </tr>
                                             )
                                         })
