@@ -1,12 +1,14 @@
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useState } from 'react'
+import * as THREE from "three";
 //Images==============>>>>>>>>>>>>>>>>>
 import bgDots from "../assets/img/bgDots.png";
 import { Beats } from '../models/Beats';
 import { Vr } from '../models/Vr';
 import gsap from 'gsap';
 import SplitType from 'split-type';
+import { WebGLRenderer } from 'three';
 
 
 
@@ -30,8 +32,8 @@ export default function Interest() {
                         <div className="flex flex-col justify-between gap-8 md:pb-32">
                             <span className='flex md:text-5xl text-3xl gap-3 mb-10'>
                                 <h1 className='text-primary'>#</h1>
-                                <h2 className='text-white' id='split'>personal interests</h2>
-                                <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
+                                <h2 className='text-white w-full' id='split'>personal interests</h2>
+                                <p className='bg-primary-100 md:w-1/2 h-[1px] my-auto'></p>
                             </span>
 
                             {
@@ -65,7 +67,7 @@ export default function Interest() {
                     </div>
 
                     <div className="text-primary-100 md:h-full h-[40vh]">
-                        <Canvas className='w-full h-full cursor-pointer'>
+                        <Canvas className='w-full h-full cursor-pointer canvas' >
                             <Suspense fallback={null}>
                                 <PerspectiveCamera makeDefault position={[7, -10, 17]} fov={[50]} />
                                 <OrbitControls enableZoom={false} minPolarAngle={[0]} maxPolarAngle={[1]} />

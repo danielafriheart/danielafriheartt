@@ -25,7 +25,7 @@ export default function Awards() {
                     <div className="grid md:grid-cols-[20%,80%] ">
                         <div className=""></div>
                         <div className="">
-                            <table className='table-auto table w-full lg:mt-20 text-left'>
+                            <table className='table-auto table w-full lg:mt-20 md:mt-20 text-left'>
                                 <thead className='text-white border-b border-primary-100 border-opacity-25'>
                                     <tr className='text-2xl w-full  hidden md:flex justify-between'>
                                         <th className='pb-5 w-full'>Project</th>
