@@ -20,7 +20,7 @@ export default function Connect() {
                 <div className="h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto z-20">
                     <header className='flex md:text-5xl text-3xl gap-3'>
                         <h1 className='text-primary'>/</h1>
-                        <h2 className='text-white w-full'>connect with me ✨</h2>
+                        <h2 className='text-white w-full' id='split'>connect with me ✨</h2>
                         <p className='bg-primary-100 w-40 h-[1px] my-auto'></p>
                     </header>
                     <div className="grid md:grid-cols-[1fr,2fr] mt-20 ">

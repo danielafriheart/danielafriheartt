@@ -8,6 +8,10 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Work from './pages/Work';
 
+import gsap from 'gsap';
+import SplitType from 'split-type';
+
+
 
 export default function App() {
 
@@ -19,7 +23,13 @@ export default function App() {
     }, 3000) //3 Seconds timeout
   }, []);
 
-
+  const splitedText = new SplitType('#split')
+  gsap.to('.char', {
+    y: 0,
+    stagger: 0.05,
+    delay: 0.2,
+    duration: .1
+  })
 
   return (
     <>

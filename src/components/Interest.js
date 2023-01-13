@@ -1,14 +1,10 @@
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useState } from 'react'
-import * as THREE from "three";
 //Images==============>>>>>>>>>>>>>>>>>
 import bgDots from "../assets/img/bgDots.png";
 import { Beats } from '../models/Beats';
 import { Vr } from '../models/Vr';
-import gsap from 'gsap';
-import SplitType from 'split-type';
-import { WebGLRenderer } from 'three';
 
 
 
@@ -18,8 +14,7 @@ export default function Interest() {
     const [tab, setNewTab] = useState(1);
     //====================>>>>>>>>>>>
     //Split type
-    const splitedText = new SplitType('#split')
-    // gsap.to()
+
 
     return (
         <>

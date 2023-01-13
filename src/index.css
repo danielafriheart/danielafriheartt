@@ -5,7 +5,7 @@
 @import url('https://fonts.cdnfonts.com/css/quicksand');
 
 * {
-  outline: 1px solid silver;
+  /* outline: 1px solid silver; */
   cursor: none;
 }
 
@@ -129,4 +129,12 @@ ComposableMap{
     opacity: 0;
     transform: translate(-50%, -50%) scale(7);
   }
+}
+
+
+
+/* Gsap animation */
+.char{
+  transform: translateY(100px);
+  transition: transform .5s;
 }
