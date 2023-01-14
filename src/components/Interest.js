@@ -25,6 +25,7 @@ export default function Interest() {
                 <div className="grid md:grid-cols-[1fr,2fr] gap-0 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col justify-between gap-8 md:pb-32">
+                            
                             <span className='flex md:text-5xl text-3xl gap-3 mb-10'>
                                 <h1 className='text-primary'>#</h1>
                                 <h2 className='text-white w-full' id='split'>personal interests</h2>
@@ -56,8 +57,8 @@ export default function Interest() {
                                     <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}>Music
                                     </button>
                                 </li>
-
                             </ul>
+
                         </div>
                     </div>
 
