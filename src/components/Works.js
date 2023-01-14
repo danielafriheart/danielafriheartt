@@ -108,7 +108,7 @@ export default function Works() {
 
 
     return (
-        <div className='py-20 relative'>
+        <div className='py-20 relative' data-scroll-section>
             <img src={bgDots} alt="bgDots" className='absolute z-10 opacity-20 top-80' />
 
             <div className=" w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">

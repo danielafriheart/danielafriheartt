@@ -12,7 +12,7 @@ export default function Connect() {
 
     return (
         <>
-            <div className='lg:h-[65vh] h-full py-20 relative'>
+            <div className='lg:h-[65vh] h-full py-20 relative' data-scroll-section>
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-32 opacity-20 z-10' />
                 <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-20 z-10' />
                 <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-20 z-10' />

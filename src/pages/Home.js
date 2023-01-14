@@ -20,7 +20,7 @@ export default function Home() {
     })
 
     return (
-        <>
+        <div data-scroll-container>
             <Hero />
             <About />
             <Awards />
@@ -28,6 +28,6 @@ export default function Home() {
             <Project />
             {/* <Map /> */}
             <Connect />
-        </>
+        </div>
     )
 }

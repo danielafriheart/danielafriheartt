@@ -29,7 +29,7 @@ export default function Navbar() {
 
 
   return (
-    <div className='fixed w-screen z-50'>
+    <div className='fixed w-screen z-50' data-scroll-section>
       <div className="w-[90vw] lg:w-[80vw] sm:w-[95vw] pt-[2em] mx-auto flex">
         <Link to='/' className='text-white font-bold'>D a n i e l.</Link>
 

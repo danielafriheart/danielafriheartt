@@ -18,7 +18,7 @@ export default function Interest() {
 
     return (
         <>
-            <div className='lg:h-screen h-full pt-20 relative'>
+            <div className='lg:h-screen h-full pt-20 relative' data-scroll-section>
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-30' />
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-52 opacity-10' />
                 <div className='text-white opacity-[3%] text-[10em] absolute right-20 md:top-0 bottom-0 text-right h2'>Personal <br /> Interests</div>
