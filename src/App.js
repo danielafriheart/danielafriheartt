@@ -10,12 +10,15 @@ import Work from './pages/Work';
 
 import gsap from 'gsap';
 import SplitType from 'split-type';
+import useLocomotiveScroll from './components/useLocomotiveScroll';
 
 
 
 export default function App() {
 
   const [loading, setLoading] = useState(false); //loader State
+  // useLocomotiveScroll(!loading); //not working yet, paused for later.
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -23,13 +26,13 @@ export default function App() {
     }, 3000) //3 Seconds timeout
   }, []);
 
-  const splitedText = new SplitType('#split')
-  gsap.to('.char', {
-    y: 0,
-    stagger: 0.05,
-    delay: 0.2,
-    duration: .1
-  })
+  // const splitedText = new SplitType('#split')
+  // gsap.to('.char', {
+  //   y: 0,
+  //   stagger: 0.05,
+  //   delay: 0.2,
+  //   duration: .1
+  // })
 
   return (
     <>

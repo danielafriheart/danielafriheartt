@@ -14,11 +14,11 @@ export default function Awards() {
     //=============================================>>>>>>>>>>>>>>
     return (
         <>
-            <div className='py-20 relative' data-scroll-section>
+            <section className='py-20 relative' data-scroll-section>
                 <div className="h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <header className='flex md:text-5xl text-3xl gap-3'>
                         <h1 className='text-primary'>/</h1>
-                        <h2 className='text-white w-full'>awards & recognitions</h2>
+                        <h2 className='text-white w-full' data-scroll>awards & recognitions</h2>
                         <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
                     </header>
 
@@ -50,7 +50,7 @@ export default function Awards() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

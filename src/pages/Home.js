@@ -20,7 +20,7 @@ export default function Home() {
     })
 
     return (
-        <div data-scroll-container>
+        <div id='container' data-scroll-container>
             <Hero />
             <About />
             <Awards />

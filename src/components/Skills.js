@@ -25,7 +25,7 @@ export default function Skills() {
     ]
 
     return (
-        <div className='grid grid-cols-2 gap-8' data-scroll-section>
+        <div className='grid grid-cols-2 gap-8'>
             {
                 skills.map((skillSet, i) => {
                     return (

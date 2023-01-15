@@ -6,8 +6,7 @@ import heroImg from "../assets/img/heroImg.png";
 
 export default function Hero() {
     return (
-        <>
-            <div className='flex justify-center items-end bg-gray-100 relative lg:h-[100vh] h-full' data-scroll-section>
+            <section className='flex justify-center items-end bg-gray-100 relative lg:h-[100vh] md:h-[100vh] h-full' data-scroll-section>
                 <div className='text-white opacity-[3%] text-[10em] absolute right-20 top-0 text-right h2 z-20 hidden md:flex lg:flex'>Daniel <br />Afriheart</div>
 
                 <div className="md:flex hidden rectangle h-full w-[20em] bg-primary-100 lg:right-[20em] md:right-[10em] sm:right-[3em] absolute z-10"></div>
@@ -30,7 +29,6 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-            </div >
-        </>
+            </section >
     )
 }

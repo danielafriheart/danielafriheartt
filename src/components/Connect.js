@@ -1,6 +1,6 @@
 import React from 'react'
 //Icons =======================>>>>>>>>>
-//=============================>>>>>>>>>>>>
+//=============================>>>>>>>>>
 //Images =======================>>>>>>>>>
 import rectangle26 from "../assets/img/rectangle26.png";
 import rectangle25 from "../assets/img/rectangle25.png";
@@ -11,8 +11,7 @@ import dots1 from "../assets/img/dots1.png";
 export default function Connect() {
 
     return (
-        <>
-            <div className='lg:h-[65vh] h-full py-20 relative' data-scroll-section>
+            <section className='lg:h-[65vh] h-full py-20 relative' data-scroll-section>
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-32 opacity-20 z-10' />
                 <img src={rectangle26} alt="rectangle26" className='right-0 absolute opacity-20 z-10' />
                 <img src={rectangle25} alt="rectangle26" className='bottom-20 right-0 absolute opacity-20 z-10' />
@@ -35,7 +34,6 @@ export default function Connect() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </>
+            </section>
     )
 }

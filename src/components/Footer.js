@@ -11,7 +11,7 @@ import bgDots from '../assets/img/dots1.png'
 
 export default function Footer() {
   return (
-    <div className='py-10 relative' data-scroll-section>
+    <footer className='py-10 relative' data-scroll-section>
       <img src={bgDots} alt="bgDot" className='absolute -z-10 bottom-20 opacity-20' />
       <div className="w-[70vw] mx-auto text-center py-10 border-t border-primary-100 flex-col gap-5 flex">
         <h2 className='text-white md:text-3xl text-2xl'>all-socials ✨</h2>
@@ -29,6 +29,6 @@ export default function Footer() {
         </div>
         <p className='text-[1em] text-gray'>Designed & Developed by Esuola Daniel</p>
       </div>
-    </div>
+    </footer>
   )
 }

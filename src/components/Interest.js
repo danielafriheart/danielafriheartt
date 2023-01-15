@@ -18,7 +18,7 @@ export default function Interest() {
 
     return (
         <>
-            <div className='lg:h-screen h-full pt-20 relative' data-scroll-section>
+            <section className='lg:h-screen h-full pt-20 relative' data-scroll-section>
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-30' />
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-52 opacity-10' />
                 <div className='text-white opacity-[3%] text-[10em] absolute right-20 md:top-0 bottom-0 text-right h2'>Personal <br /> Interests</div>
@@ -26,7 +26,7 @@ export default function Interest() {
                     <div>
                         <div className="flex flex-col justify-between gap-8 md:pb-32">
                             
-                            <span className='flex md:text-5xl text-3xl gap-3 mb-10'>
+                            <span className='flex md:text-5xl text-3xl gap-3 mb-10' data-scroll>
                                 <h1 className='text-primary'>#</h1>
                                 <h2 className='text-white w-full' id='split'>personal interests</h2>
                                 <p className='bg-primary-100 md:w-1/2 h-[1px] my-auto'></p>
@@ -100,7 +100,7 @@ export default function Interest() {
                     </div>
 
                 </div>
-            </div>
+            </section>
         </>
     )
 }

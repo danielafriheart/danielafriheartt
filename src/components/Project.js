@@ -29,7 +29,7 @@ function Project() {
 
     return (
         <>
-            <div className='lg:h-[100vh] h-full py-20 relative' data-scroll-section>
+            <section className='lg:h-[100vh] h-full py-20 relative' data-scroll-section>
                 {/* <div className='text-white opacity-[2%] text-[10em] absolute md:left-20 hidden md:flex top-0 text-right h2'>Selected <br /> Projects</div> */}
 
                 <img src={bgDots} alt="bgDot" className='absolute -z-10 right-0 bottom-1/2 opacity-30' />
@@ -73,7 +73,7 @@ function Project() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
