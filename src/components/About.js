@@ -31,7 +31,7 @@ export default function About() {
               Constantly seeking out ways to push the boundaries and explore new domains, including the world of art. I am driven by a passion for innovation and a desire to constantly improve my craft.
             </p>
           </div>
-          <button className='btn'>My Résumé <BsArrowRight className='' /></button>
+          {/* <button className='btn'>My Résumé <BsArrowRight className='' /></button> */}
         </div>
 
         <div className='h-full flex flex-col items-center md:py-0 pt-14' data-scroll>
