@@ -18,13 +18,16 @@ export default function Hero() {
 
                         <h1 className='text-6xl lg:text-7xl sm:text-4xl text-white' id='split'
                             data-aos="fade-in"
+                            data-aos-delay="200"
+                            data-aos-easing="ease-in-sine"
                         >
                             Esuola Daniel,
                         </h1>
 
                         <p className='text-gray'
                             data-aos="fade-in"
-                            data-aos-delay="200"
+                            data-aos-delay="300"
+                            data-aos-easing="ease-in-sine"
                         >
                             Software Developer at <a href="https://edozzier.com/" rel="noopener noreferrer" target='_blank' className='text-primary link relative'>Edozzier</a> and Product Designer✨
                         </p>
@@ -32,13 +35,15 @@ export default function Hero() {
                         <p className='text-gray'
                             data-aos="fade-in"
                             data-aos-delay="400"
+                            data-aos-easing="ease-in-sine"
                         >
                             I'm a wizard with code, conjuring up captivating product designs and crafting seamless web experiences. As a Software Developer, I specialize in frontend magic with React and have a touch of Angular in my arsenal. I strive to create inclusive and accessible apps that will blow your mind.
                         </p>
 
                         <p className='text-gray'
                             data-aos="fade-in"
-                            data-aos-delay="600"
+                            data-aos-delay="500"
+                            data-aos-easing="ease-in-sine"
                         >
                             Oh, and don't even get me started on my CSS skills – they're totally bewitching.
                         </p>

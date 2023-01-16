@@ -86,7 +86,11 @@ export default function About() {
         </div>
 
         <div className='h-full flex flex-col items-center md:py-0 pt-14' >
-          <div className="md:pl-20 lg:pl-20 sm:pl-0 mt-auto">
+          <div className="md:pl-20 lg:pl-20 sm:pl-0 mt-auto"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-sine"
+          >
             <Skills />
           </div>
         </div>
