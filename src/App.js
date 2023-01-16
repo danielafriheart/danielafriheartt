@@ -7,12 +7,9 @@ import SideNav from './components/SideNav';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Work from './pages/Work';
-
-import gsap from 'gsap';
-import SplitType from 'split-type';
-import useLocomotiveScroll from './components/useLocomotiveScroll';
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function App() {
 
@@ -25,21 +22,6 @@ export default function App() {
     setTimeout(() => {
       setLoading(false);
     }, 3000) //3 Seconds timeout
-
-
-    const split = new SplitType('#split', {
-      type: 'lines',
-      lineClass: 'Linechildren',
-    })//GSAP
-
-    gsap.to(split.lines, {
-      duration: 1,
-      y: 0,
-      opacity: 1,
-      stagger: 0.1,
-      ease: 'power2'
-    })
-
   }, []);
 
   return (
