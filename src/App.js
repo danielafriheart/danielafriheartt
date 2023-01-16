@@ -17,6 +17,7 @@ import useLocomotiveScroll from './components/useLocomotiveScroll';
 export default function App() {
 
   const [loading, setLoading] = useState(false); //loader State
+
   // useLocomotiveScroll(!loading); //not working yet, paused for later.
 
   useEffect(() => {
@@ -24,15 +25,22 @@ export default function App() {
     setTimeout(() => {
       setLoading(false);
     }, 3000) //3 Seconds timeout
-  }, []);
 
-  // const splitedText = new SplitType('#split')
-  // gsap.to('.char', {
-  //   y: 0,
-  //   stagger: 0.05,
-  //   delay: 0.2,
-  //   duration: .1
-  // })
+
+    const split = new SplitType('#split', {
+      type: 'lines',
+      lineClass: 'Linechildren',
+    })//GSAP
+
+    gsap.to(split.lines, {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: 'power2'
+    })
+
+  }, []);
 
   return (
     <>

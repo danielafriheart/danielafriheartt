@@ -13,7 +13,7 @@ function Project() {
             tool: ['JavaScript'],
             title: 'iWallet',
             description: 'iWallet is a Financial Technology web application',
-            image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671314695/portfolioImages/iWallet_qiyklj.png',
+            image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1673863542/portfolioImages/iWallet_hwicf0.png',
             link: 'https://i-wallet.netlify.app/index.html'
         },
         {

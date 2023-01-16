@@ -134,7 +134,6 @@ ComposableMap{
 
 
 /* Gsap animation */
-.char{
-  transform: translateY(100px);
-  transition: transform .5s;
+.Linechildren{
+  transform: translate(0,500px);
 }
