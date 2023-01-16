@@ -25,24 +25,60 @@ export default function About() {
       <img src={dots1} alt="rectangle26" className='bottom-1/2 absolute z-10 opacity-30' />
 
       <div className="grid md:grid-cols-2 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
-        
+
         <div>
           <div className="flex flex-col gap-8">
             <span className='flex md:text-5xl text-3xl gap-3'>
-              <h1 className='text-primary'>#</h1>
+              <h1 className='text-primary'
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="100"
+                data-aos-offset="0"
+              >
+                #
+              </h1>
 
               <div>
-                <h2 className='text-white'>passionate</h2>
-                <h2 className='text-white'>creative</h2>
-                <h2 className='text-white'>developer</h2>
+                <h2 className='text-white'
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                  data-aos-easing="ease-in-sine"
+                >
+                  passionate
+                </h2>
+
+                <h2 className='text-white'
+                  data-aos="fade-in"
+                  data-aos-delay="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  creative
+                </h2>
+                <h2 className='text-white'
+                  data-aos="fade-in"
+                  data-aos-delay="400"
+                  data-aos-easing="ease-in-sine"
+                >
+                  developer
+                </h2>
               </div>
 
               <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
             </span>
-            <p className='text-gray md:w-[85%]'>
+
+            <p className='text-gray md:w-[85%]'
+              data-aos="fade-in"
+              data-aos-delay="500"
+              data-aos-easing="ease-in-sine"
+            >
               I am constantly seeking out new challenges and opportunities to expand my knowledge and skills. With years of experience in creating visually stunning and functional products and web experiences,
             </p>
-            <p className='text-gray md:w-[85%]'>
+
+            <p className='text-gray md:w-[85%]'
+              data-aos="fade-in"
+              data-aos-delay="550"
+              data-aos-easing="ease-in-sine"
+            >
               Constantly seeking out ways to push the boundaries and explore new domains, including the world of art. I am driven by a passion for innovation and a desire to constantly improve my craft.
             </p>
           </div>
