@@ -44,7 +44,7 @@ export default function Awards() {
                             </h2>
                         </div>
 
-                        <p className='bg-primary-100 w-[25%] ml-auto h-[1px] my-auto'
+                        <p className='bg-primary-100 w-1/2 ml-auto h-[1px] my-auto'
                             data-aos="fade-in"
                             data-aos-delay="800"
                             data-aos-easing="ease-in-sine"
