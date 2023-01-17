@@ -63,7 +63,11 @@ export default function About() {
                 </h2>
               </div>
 
-              <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
+              <p className='bg-primary-100 w-full h-[1px] my-auto'
+                data-aos="fade-in"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-sine"
+              ></p>
             </span>
 
             <p className='text-gray md:w-[85%]'
