@@ -92,23 +92,23 @@ export default function Interest() {
                                 </p>
                             }
 
-                            <ul className='flex gap-3 flex-col'>
+                            <ul className='flex gap-3 flex-col w-full'>
 
                                 <li>
-                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}
-                                    // data-aos="fade-in"
-                                    // data-aos-delay="600"
-                                    // data-aos-easing="ease-in-sine"
+                                    <button className={`${tab === 1 ? 'text-[#414249] underline' : 'text-[#2C2C31]'} h2 md:text-4xl text-3xl hover:text-[#414249] transition-all duration-300`} onClick={() => setNewTab(1)}
+                                        data-aos="fade-in"
+                                        data-aos-delay="100"
+                                        data-aos-easing="ease-in-sine"
                                     >
                                         Virtual Reality
                                     </button>
                                 </li>
 
                                 <li>
-                                    <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}
-                                    // data-aos="fade-in"
-                                    // data-aos-delay="700"
-                                    // data-aos-easing="ease-in-sine"
+                                    <button className={`${tab === 2 ? 'text-[#414249] underline' : 'text-[#2C2C31]'} h2 md:text-4xl text-3xl hover:text-[#414249] transition-all duration-300`} onClick={() => setNewTab(2)}
+                                        data-aos="fade-in"
+                                        data-aos-delay="200"
+                                        data-aos-easing="ease-in-sine"
                                     >
                                         Music
                                     </button>

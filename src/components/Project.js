@@ -37,23 +37,65 @@ function Project() {
                     <div>
                         <div className="flex flex-col gap-8">
                             <header className='flex md:text-5xl text-3xl gap-3'>
-                                <h1 className='text-primary'>#</h1>
-                                <h2 className='text-white'>projects</h2>
-                                <p className='bg-primary-100 w-full h-[1px] my-auto'></p>
+
+                                <h1 className='text-primary'
+                                    data-aos="fade-zoom-in"
+                                    data-aos-easing="ease-in-back"
+                                    data-aos-delay="100"
+                                    data-aos-offset="0"
+                                >
+                                    04
+                                </h1>
+
+                                <h2 className='text-white'
+                                    data-aos="fade-in"
+                                    data-aos-delay="200"
+                                    data-aos-easing="ease-in-sine"
+                                >
+                                    projects
+                                </h2>
+
+                                <p className='bg-primary-100 w-full h-[1px] my-auto'
+                                    data-aos="fade-in"
+                                    data-aos-delay="800"
+                                    data-aos-easing="ease-in-sine"
+                                ></p>
                             </header>
-                            <p className='text-gray'>
+                            <p className='text-gray'
+                                data-aos="fade-in"
+                                data-aos-delay="300"
+                                data-aos-easing="ease-in-sine"
+                            >
                                 Here are some of my most noteworthy endeavors, where I've had the pleasure of working with a diverse range of talented individuals and teams.
                             </p>
-                            <p className='text-gray'>
+                            <p className='text-gray'
+                                data-aos="fade-in"
+                                data-aos-delay="400"
+                                data-aos-easing="ease-in-sine"
+                            >
                                 These projects range from personal endeavors to collaborations with clients.
                             </p>
                         </div>
                     </div>
                     <div className="text-white flex flex-col justify-between">
+
                         <div className="flex">
-                            <NavLink to='/works' className='ml-auto flex text-gray hover:text-white hover:font-bold transition-all duration-300flex items-center gap-3'>View all <BsArrowRight /></NavLink>
+                            <NavLink
+                                to='/works'
+                                className='ml-auto flex text-gray hover:text-white hover:font-bold transition-all duration-300flex items-center gap-3'
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                            >
+                                View all <BsArrowRight />
+                            </NavLink>
                         </div>
-                        <div className="p-5 place-content-end grid md:grid-cols-2 gap-5 md:px-5 px-0">
+
+                        <div className="p-5 place-content-end grid md:grid-cols-2 gap-5 md:px-5 px-0"
+                            data-aos="fade-up"
+                            data-aos-duration="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             {
                                 workList.map((workCard, i) => {
                                     return (
@@ -63,7 +105,7 @@ function Project() {
                                             <hr className='text-gray' />
                                             <h2 className='text-white text-2xl'>{workCard.title}</h2>
                                             <p className='text-gray'>{workCard.description}</p>
-                                            <div className='flex'>            
+                                            <div className='flex'>
                                                 <a href={workCard.link} rel='noreferrer noopener' target='_blank' className='btn'>{workCard.type === 'ui' ? 'Figma' : 'View project'}<BsArrowRight /></a>
                                             </div>
                                         </div>

@@ -49,7 +49,7 @@ export default function Navbar() {
 
             <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
               data-aos="fade-down"
-              data-aos-delay="200"
+              data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
               <span className='text-primary'>#</span> about
@@ -57,7 +57,7 @@ export default function Navbar() {
 
             <NavLink activeclassname='active' to='/works' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
               data-aos="fade-down"
-              data-aos-delay="300"
+              data-aos-duration="1100"
               data-aos-easing="ease-in-sine"
             >
               <span className='text-primary'>#</span> works
@@ -65,7 +65,7 @@ export default function Navbar() {
 
             <NavLink activeclassname='active' to='/contact' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
               data-aos="fade-down"
-              data-aos-delay="400"
+              data-aos-duration="1200"
               data-aos-easing="ease-in-sine"
             >
               <span className='text-primary'>#</span> contact
