@@ -10,7 +10,7 @@ import dots1 from "../assets/img/dots1.png";
 
 export default function About() {
   return (
-    <section className='lg:h-screen h-full py-20 relative'>
+    <section className='lg:h-screen h-full py-20 relative my-10'>
 
       <div className='text-[#222126] text-[10em] absolute right-20 top-20 text-right h2'
         data-aos="fade-right"
@@ -35,7 +35,7 @@ export default function About() {
                 data-aos-delay="100"
                 data-aos-offset="0"
               >
-                #
+                o1
               </h1>
 
               <div>

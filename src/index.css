@@ -130,10 +130,3 @@ ComposableMap{
     transform: translate(-50%, -50%) scale(7);
   }
 }
-
-
-
-/* Gsap animation */
-.Linechildren{
-  transform: translate(0,500px);
-}

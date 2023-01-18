@@ -31,7 +31,14 @@ export default function Navbar() {
   return (
     <div className='fixed w-screen z-50' data-scroll-section>
       <div className="w-[90vw] lg:w-[80vw] sm:w-[95vw] pt-[2em] mx-auto flex">
-        <Link to='/' className='text-white font-bold'>D a n i e l.</Link>
+        <Link to='/' className='text-white font-bold'
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="100"
+          data-aos-offset="0"
+        >
+          D a n i e l.
+        </Link>
 
         <button className="ml-auto md:hidden " aria-controls='mobile-menu' aria-expanded='false'>
           <CgMenuRight className={`${open === false ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavOpen} />
@@ -39,13 +46,28 @@ export default function Navbar() {
 
         <ul className='ml-auto hidden md:flex'>
           <li className='gap-10 flex'>
-            <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+
+            <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
+              data-aos="fade-down"
+              data-aos-delay="200"
+              data-aos-easing="ease-in-sine"
+            >
               <span className='text-primary'>#</span> about
             </NavLink>
-            <NavLink activeclassname='active' to='/works' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+
+            <NavLink activeclassname='active' to='/works' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-sine"
+            >
               <span className='text-primary'>#</span> works
             </NavLink>
-            <NavLink activeclassname='active' to='/contact' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'>
+
+            <NavLink activeclassname='active' to='/contact' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
+              data-aos="fade-down"
+              data-aos-delay="400"
+              data-aos-easing="ease-in-sine"
+            >
               <span className='text-primary'>#</span> contact
             </NavLink>
           </li>

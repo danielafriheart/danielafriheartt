@@ -18,30 +18,76 @@ export default function Interest() {
 
     return (
         <>
-            <section className='lg:h-screen h-full pt-20 relative' data-scroll-section>
+            <section className='lg:h-screen h-full pt-20 relative my-10'>
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:right-20 opacity-30' />
                 <img src={bgDots} alt="" className='absolute md:bottom-0 bottom-52 md:left-52 opacity-10' />
-                <div className='text-white opacity-[3%] text-[10em] absolute right-20 md:top-0 bottom-0 text-right h2'>Personal <br /> Interests</div>
+
+                <div className='text-[#222126] text-[10em] absolute right-20 md:top-0 bottom-0 text-right h2'
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                >
+                    Personal <br /> Interests
+                </div>
+
                 <div className="grid md:grid-cols-[1fr,2fr] gap-0 h-full w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                     <div>
                         <div className="flex flex-col justify-between gap-8 md:pb-32">
-                            
-                            <span className='flex md:text-5xl text-3xl gap-3 mb-10' data-scroll>
-                                <h1 className='text-primary'>#</h1>
-                                <h2 className='text-white w-full' id='split'>personal interests</h2>
-                                <p className='bg-primary-100 md:w-1/2 h-[1px] my-auto'></p>
+
+                            <span className='flex md:text-5xl text-3xl gap-3 mb-10'>
+
+                                <h1 className='text-primary'
+                                    data-aos="fade-zoom-in"
+                                    data-aos-easing="ease-in-back"
+                                    data-aos-delay="100"
+                                    data-aos-offset="0"
+                                >
+                                    03
+                                </h1>
+
+                                <div>
+                                    <h2 className='text-white w-full'
+                                        data-aos="fade-in"
+                                        data-aos-delay="200"
+                                        data-aos-easing="ease-in-sine"
+                                    >
+                                        personal
+                                    </h2>
+                                    <h2 className='text-white w-full'
+                                        data-aos="fade-in"
+                                        data-aos-delay="300"
+                                        data-aos-easing="ease-in-sine"
+                                    >
+                                        interests
+                                    </h2>
+                                </div>
+
+                                <p className='bg-primary-100 md:w-1/2 h-[1px] my-auto'
+                                    data-aos="fade-in"
+                                    data-aos-delay="800"
+                                    data-aos-easing="ease-in-sine"
+                                ></p>
+
                             </span>
 
                             {
                                 tab === 1 &&
-                                <p className='text-gray'>
+                                <p className='text-gray'
+                                    data-aos="fade-in"
+                                    data-aos-delay="300"
+                                    data-aos-easing="ease-in-sine"
+                                >
                                     The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me. It is a technology that I am deeply interested in and am excited to see where it takes us in the future.
                                 </p>
                             }
 
                             {
                                 tab === 2 &&
-                                <p className='text-gray'>
+                                <p className='text-gray'
+                                    data-aos="fade-in"
+                                    data-aos-delay="300"
+                                    data-aos-easing="ease-in-sine"
+                                >
                                     Music has the power to transport me to different worlds, lift my mood, and help me express myself in ways that words simply cannot. From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.
                                 </p>
                             }
@@ -49,12 +95,22 @@ export default function Interest() {
                             <ul className='flex gap-3 flex-col'>
 
                                 <li>
-                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}>Virtual Reality
+                                    <button className={`${tab === 1 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(1)}
+                                    // data-aos="fade-in"
+                                    // data-aos-delay="600"
+                                    // data-aos-easing="ease-in-sine"
+                                    >
+                                        Virtual Reality
                                     </button>
                                 </li>
 
                                 <li>
-                                    <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}>Music
+                                    <button className={`${tab === 2 ? 'text-gray opacity-25 underline' : 'text-gray opacity-10'} h2 md:text-4xl text-3xl hover:text-gray hover:opacity-20 transition-all duration-300`} onClick={() => setNewTab(2)}
+                                    // data-aos="fade-in"
+                                    // data-aos-delay="700"
+                                    // data-aos-easing="ease-in-sine"
+                                    >
+                                        Music
                                     </button>
                                 </li>
                             </ul>
@@ -63,7 +119,12 @@ export default function Interest() {
                     </div>
 
                     <div className="text-primary-100 md:h-full h-[40vh]">
-                        <Canvas className='w-full h-full cursor-pointer canvas' >
+                        <Canvas
+                            className='w-full h-full cursor-pointer canvas'
+                            data-aos="fade-in"
+                            data-aos-delay="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <Suspense fallback={null}>
                                 <PerspectiveCamera makeDefault position={[7, -10, 17]} fov={[50]} />
                                 <OrbitControls enableZoom={false} minPolarAngle={[0]} maxPolarAngle={[1]} />
