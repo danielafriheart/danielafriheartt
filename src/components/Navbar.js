@@ -17,16 +17,12 @@ export default function Navbar() {
 
   const handleNavOpen = () => {
     setOpen(true);
-    // console.log(open);
   };
 
   const handleNavClose = () => {
     setOpen(false);
-    // console.log(open);
   };
   //Mobile Navigation Toggler=================>>>>>>>>
-
-
 
   return (
     <div className='fixed w-screen z-50' data-scroll-section>
@@ -47,7 +43,7 @@ export default function Navbar() {
         <ul className='ml-auto hidden md:flex'>
           <li className='gap-10 flex'>
 
-            <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
+            <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300 link '
               data-aos="fade-down"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
@@ -55,7 +51,7 @@ export default function Navbar() {
               <span className='text-primary'>#</span> about
             </NavLink>
 
-            <NavLink activeclassname='active' to='/works' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
+            <NavLink activeclassname='active' to='/works' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300 link'
               data-aos="fade-down"
               data-aos-duration="1100"
               data-aos-easing="ease-in-sine"
@@ -63,7 +59,7 @@ export default function Navbar() {
               <span className='text-primary'>#</span> works
             </NavLink>
 
-            <NavLink activeclassname='active' to='/contact' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300'
+            <NavLink activeclassname='active' to='/contact' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300 link'
               data-aos="fade-down"
               data-aos-duration="1200"
               data-aos-easing="ease-in-sine"

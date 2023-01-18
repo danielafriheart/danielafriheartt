@@ -15,14 +15,30 @@ export default function App() {
 
   const [loading, setLoading] = useState(false); //loader State
 
-  // useLocomotiveScroll(!loading); //not working yet, paused for later.
-
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 1000) //3 Seconds timeout
   }, []);
+
+  // cursor
+  document.addEventListener("DOMContentLoaded", () => {
+    // Your code here
+    const links = document.querySelectorAll('.link')
+    const cursor = document.querySelector('.cursor')
+
+    links.forEach(link => {
+      console.log(link);
+      link.addEventListener("mouseenter", () => {
+        cursor.classList.add("bigCursor");
+      });
+      link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("bigCursor");
+      });
+    });
+  });
+
 
   return (
     <>

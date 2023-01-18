@@ -122,7 +122,7 @@ export default function Interest() {
                         <Canvas
                             className='w-full h-full cursor-pointer canvas'
                             data-aos="fade-in"
-                            data-aos-delay="500"
+                            data-aos-duration="1000"
                             data-aos-easing="ease-in-sine"
                         >
                             <Suspense fallback={null}>
