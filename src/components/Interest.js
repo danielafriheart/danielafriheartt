@@ -15,6 +15,19 @@ export default function Interest() {
     //====================>>>>>>>>>>>
     //Split type
 
+    const cursor = document.querySelector('.cursor');
+    const changeCursorHere = () => {
+        cursor.classList.add('clickAndDrag')
+    }
+    const defaultCursor = () => {
+        cursor.classList.remove('clickAndDrag')
+    }
+    // changeCursorType.addEventListener('mouseenter', () => {
+    //     cursor.classList.add('clickAndDrag')
+    // })
+    // changeCursorType.addEventListener('mouseleave', () => {
+    //     cursor.classList.remove('clickAndDrag')
+    // })
 
     return (
         <>
@@ -120,6 +133,9 @@ export default function Interest() {
 
                     <div className="text-primary-100 md:h-full h-[40vh]">
                         <Canvas
+                            // id='changeCursorHere'
+                            onMouseEnter={changeCursorHere}
+                            onMouseLeave={defaultCursor}
                             className='w-full h-full cursor-pointer canvas'
                             data-aos="fade-in"
                             data-aos-duration="1000"

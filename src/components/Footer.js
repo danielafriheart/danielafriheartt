@@ -27,7 +27,11 @@ export default function Footer() {
 
           </div>
         </div>
-        <p className='text-[1em] text-gray'>Designed & Developed by Esuola Daniel</p>
+        <p className='text-[1em] text-gray'>
+          Designed & Developed by
+          <a href="https://www.linkedin.com/in/daniel-esuola/" rel='noopener noreferer' target='_blank'> Esuola Daniel</a>
+          
+        </p>
       </div>
     </footer>
   )
