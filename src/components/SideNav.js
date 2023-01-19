@@ -7,7 +7,7 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 
 function SideNav() {
     return (
-        <div className='fixed z-40 flex-col items-center ml-8 pb-2 px-2 bg-background hidden lg:flex sm:hidden'>
+        <div className='fixed z-40 flex-col items-center ml-8 pb-2 px-2 hidden lg:flex sm:hidden'>
             <div className='line bg-gray h-[15em] w-1 rounded-full mb-5'
                 data-aos="fade-down"
                 // data-aos-easing="linear"

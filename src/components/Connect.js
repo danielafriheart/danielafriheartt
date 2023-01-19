@@ -64,7 +64,7 @@ export default function Connect() {
                 </header>
 
                 <div className="grid lg:grid-cols-[2fr,1fr] mt-20 ">
-                    <div className='h-full md:py-0 py-14 flex flex-col relative z-20x'>
+                    <div className='h-full md:py-0 py-14 flex flex-col relative z-20'>
 
                         <a
                             href='mailto:esuoladaniel002@gmail.com'
