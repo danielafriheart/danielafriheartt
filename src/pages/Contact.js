@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Connect from '../components/Connect'
+import Map from '../components/Map'
 
 export default function Contact() {
     useEffect(() => {
@@ -13,6 +14,7 @@ export default function Contact() {
     return (
         <>
             <Connect />
+            <Map/>
         </>
     )
 }

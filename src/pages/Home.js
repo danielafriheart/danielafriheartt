@@ -4,7 +4,7 @@ import Awards from '../components/Awards'
 import Connect from '../components/Connect'
 import Hero from '../components/Hero'
 import Interest from '../components/Interest'
-// import Map from '../components/Map'
+import Map from '../components/Map'
 import Project from '../components/Project'
 
 export default function Home() {
@@ -23,10 +23,10 @@ export default function Home() {
         <div id='container' data-scroll-container>
             <Hero />
             <About />
+            {/* <Map /> */}
             <Awards />
             <Interest />
             <Project />
-            {/* <Map /> */}
             <Connect />
         </div>
     )
