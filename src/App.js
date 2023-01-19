@@ -23,21 +23,20 @@ export default function App() {
   }, []);
 
   // cursor
-  document.addEventListener("DOMContentLoaded", () => {
-    // Your code here
-    const links = document.querySelectorAll('.link')
-    const cursor = document.querySelector('.cursor')
+  // document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('.link')
+  const cursor = document.querySelector('.cursor')
 
-    links.forEach(link => {
+  links.forEach(link => {
+    link.addEventListener("mouseenter", () => {
       console.log(link);
-      link.addEventListener("mouseenter", () => {
-        cursor.classList.add("bigCursor");
-      });
-      link.addEventListener("mouseleave", () => {
-        cursor.classList.remove("bigCursor");
-      });
+      cursor.classList.add("bigCursor");
+    });
+    link.addEventListener("mouseleave", () => {
+      cursor.classList.remove("bigCursor");
     });
   });
+  // });
 
 
   return (
