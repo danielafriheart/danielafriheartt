@@ -40,7 +40,7 @@ export default function Connect() {
 
                         <h2 className='text-white w-full'
                             data-aos="fade-in"
-                            data-aos-delay="300"
+                            data-aos-delay="250"
                             data-aos-easing="ease-in-sine"
                         >
                             with
@@ -48,7 +48,7 @@ export default function Connect() {
 
                         <h2 className='text-white w-full'
                             data-aos="fade-in"
-                            data-aos-delay="400"
+                            data-aos-delay="300"
                             data-aos-easing="ease-in-sine"
                         >
                             me

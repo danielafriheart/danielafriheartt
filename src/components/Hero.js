@@ -48,7 +48,11 @@ export default function Hero() {
                             Oh, and don't even get me started on my CSS skills – they're totally bewitching.
                         </p>
                     </div>
-                    <div className="flex items-end">
+                    <div className="flex items-end"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-easing="ease-in-sine"
+                    >
                         <img src={heroImg} alt="heroImg" className='w-[40em] lg:w-[40em] sm:w-[20em] text-end right-0 ml-auto' />
                     </div>
                 </div>

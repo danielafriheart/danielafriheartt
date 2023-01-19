@@ -12,7 +12,7 @@ export default function Works() {
         {
             id: 1,
             type: 'web',
-            tool: ['ReactJS,', ' TailwindCSS,', ' ThreeJS' ],
+            tool: ['ReactJS,', ' TailwindCSS,', ' ThreeJS'],
             title: 'Portfolio',
             description: 'You\'re using it rn :)',
             image: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671366746/portfolioImages/portfolio_zgy8kb.png',
@@ -113,13 +113,60 @@ export default function Works() {
 
             <div className=" w-[85vw] sm:w-[95vw] lg:w-[80vw] mx-auto">
                 <header>
-                    <h1 className='text-white text-3xl'><span className='text-primary'>/</span> works</h1>
-                    <p className='text-gray pt-3 md:w-[48%]'>A selected set of projects I’ve built with individuals and teams (the ones I can share).</p>
+                    <h1 className='text-white text-3xl'
+                        data-aos="fade-in"
+                        data-aos-delay="500"
+                        data-aos-easing="ease-in-sine"
+                    >
+                        <span className='text-primary'>/</span> works
+                    </h1>
+
+                    <p className='text-gray pt-3 md:w-[48%]'
+                        data-aos="fade-in"
+                        data-aos-delay="600"
+                        data-aos-easing="ease-in-sine"
+                    >
+                        A selected set of projects I’ve built with individuals and teams (the ones I can share).
+                    </p>
                 </header>
 
-                <div className='mt-10'>
-                    <h1 className='text-white md:text-5xl text-3xl mb-10'><span className='text-primary'>#</span> selected projects</h1>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-5 px-0">
+
+                <div className='flex md:text-5xl text-3xl gap-3 my-10'>
+                    <h1 className='text-primary'
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="700"
+                        data-aos-offset="0"
+                    >
+                        #
+                    </h1>
+
+                    <div className='flex gap-3'>
+                        <h2 className='text-white'
+                            data-aos="fade-in"
+                            data-aos-delay="800"
+                            data-aos-easing="ease-in-sine"
+                        >
+                            selected
+                        </h2>
+
+                        <h2 className='text-white'
+                            data-aos="fade-in"
+                            data-aos-delay="900"
+                            data-aos-easing="ease-in-sine"
+                        >
+                            projects
+                        </h2>
+                    </div>
+                </div>
+
+                <div className=''>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-5 px-0"
+                        data-aos="fade-up"
+                        data-aos-delay="1000"
+                        data-aos-easing="ease-in-sine"
+                    >
                         {
                             //Template
                             workList.map((workCard, i) => {
