@@ -10,24 +10,17 @@ import { Vr } from '../models/Vr';
 
 export default function Interest() {
 
-    //Tab=================>>>>>>>>>>>
-    const [tab, setNewTab] = useState(1);
-    //====================>>>>>>>>>>>
-    //Split type
-
-    const cursor = document.querySelector('.cursor');
+    const cursor = document.querySelector('.cursor'); //Cursor
     const changeCursorHere = () => {
         cursor.classList.add('clickAndDrag')
     }
     const defaultCursor = () => {
         cursor.classList.remove('clickAndDrag')
     }
-    // changeCursorType.addEventListener('mouseenter', () => {
-    //     cursor.classList.add('clickAndDrag')
-    // })
-    // changeCursorType.addEventListener('mouseleave', () => {
-    //     cursor.classList.remove('clickAndDrag')
-    // })
+
+    
+
+    const [tab, setNewTab] = useState(1);
 
     return (
         <>
