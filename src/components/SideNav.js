@@ -1,8 +1,8 @@
 import React from 'react'
 // Icons =============================>>>>>>>>>>>>>
-import GitHubIcon from '@mui/icons-material/GitHub';
 import { ImLinkedin2 } from 'react-icons/im';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineGithub } from 'react-icons/ai';
 // ====================================>>>>>>>>>>>>>
 
 function SideNav() {
@@ -23,7 +23,7 @@ function SideNav() {
                     data-aos-delay="1700"
                     data-aos-easing="ease-in-sine"  
                 >
-                    <GitHubIcon size='1.5em' />
+                    <AiOutlineGithub size='1.5em' />
                 </a>
 
                 <a
