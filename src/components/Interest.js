@@ -48,7 +48,7 @@ export default function Interest() {
                                     data-aos-delay="100"
                                     data-aos-offset="0"
                                 >
-                                    03
+                                    03 
                                 </h1>
 
                                 <div>

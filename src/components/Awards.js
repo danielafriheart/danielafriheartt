@@ -6,6 +6,12 @@ export default function Awards() {
     const awards = [
         {
             id: 1,
+            year: 2023,
+            platform: 'FreeCodeCamp',
+            recognitionFor: 'JavaScript Algorithms & Data Structures'
+        },
+        {
+            id: 2,
             year: 2022,
             platform: 'FreeCodeCamp',
             recognitionFor: 'Responsive Web Design'

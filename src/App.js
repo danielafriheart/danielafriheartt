@@ -19,10 +19,9 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000) //3 Seconds timeout
+    }, 3000) //3 Seconds timeout
   }, []);
 
-  // cursor
   // document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll('.link')
   const cursor = document.querySelector('.cursor')

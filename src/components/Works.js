@@ -65,48 +65,6 @@ export default function Works() {
         },
     ];
 
-    // const smallProjects = [
-    //     // {
-    //     //     id: 1,
-    //     //     type: 'web',
-    //     //     title: 'The Calamari Parfait',
-    //     //     tool: ['Photoshop'],
-    //     //     description: 'Merch design for a hemp based clothing company',
-    //     //     link: 'https://www.behance.net/gallery/157379639/Hempire-Brand-Logo'
-    //     // },
-    //     {
-    //         id: 1,
-    //         type: 'web',
-    //         title: 'Yetty Africana',
-    //         tool: ['Photoshop'],
-    //         description: 'Merch design for a hemp based clothing company',
-    //         link: 'https://www.behance.net/gallery/157379639/Hempire-Brand-Logo'
-    //     },
-    //     {
-    //         id: 1,
-    //         type: 'web',
-    //         title: 'Hempire',
-    //         tool: ['Figma, ', 'Photoshop'],
-    //         description: 'Merch design for a hemp based clothing company',
-    //         link: 'https://www.behance.net/gallery/157379639/Hempire-Brand-Logo'
-    //     },
-    //     {
-    //         id: 2,
-    //         title: 'CashLock',
-    //         tool: ['Figma'],
-    //         description: 'UI/UX Designer',
-    //         link: '#'
-    //     },
-    //     {
-    //         id: 3,
-    //         title: 'pr1',
-    //         tool: 'tool',
-    //         description: 'Description',
-    //         link: '#'
-    //     },
-    // ];
-
-
     return (
         <div className='py-20 relative' data-scroll-section>
             <img src={bgDots} alt="bgDots" className='absolute z-10 opacity-20 top-80' />
@@ -164,7 +122,7 @@ export default function Works() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-5 px-0"
                         data-aos="fade-up"
-                        data-aos-delay="1000"
+                        data-aos-="1000"
                         data-aos-easing="ease-in-sine"
                     >
                         {
@@ -193,34 +151,11 @@ export default function Works() {
                                                 <a href={workCard.link} rel='noreferrer noopener' target='_blank' className='btn'>{workCard.type === 'ui' ? 'Figma' : 'View project'}<BsArrowRight /></a>
                                             </div>
                                         </div>
-
                                 )
                             })
                         }
                     </div>
                 </div>
-                {/* Small projects */}
-                {/* <div className='mt-20'>
-                    <h1 className='text-white md:text-5xl text-3xl mb-10'><span className='text-primary'>#</span> design</h1>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-5 px-0">
-                        {
-                            //Small Projects
-                            smallProjects.map((small, i) => {
-                                return (
-                                    <div className='flex flex-col gap-2 md:mb-10 mb-5 hover:-translate-y-1 transition-all duration-300' key={i}>
-                                        <p className='text-gray'>{small.tool}</p>
-                                        <hr className='text-gray' />
-                                        <h2 className='text-white text-2xl'>{small.title}</h2>
-                                        <p className='text-gray'>{small.description}</p>
-                                        <div className='flex'>
-                                            <a href={small.link} rel='noreferrer noopener' target='_blank' className='btn'>{small.type === 'ui' ? 'Figma' : 'View project'}<BsArrowRight /></a>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div> */}
             </div>
         </div >
     )
