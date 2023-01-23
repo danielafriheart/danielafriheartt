@@ -10,6 +10,7 @@ import Work from './pages/Work';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init(); //Initialized animate on scroll
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
 
@@ -39,6 +40,7 @@ export default function App() {
 
   return (
     <>
+      <Analytics />
       {
         loading ?
           <Preloader />
