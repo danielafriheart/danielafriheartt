@@ -63,7 +63,7 @@ export default function Connect() {
                     ></p>
                 </header>
 
-                <div className="grid lg:grid-cols-[2fr,1fr] mt-20 ">
+                <div className="flex lg:flex-row flex-col lg:gap-20 mt-20 ">
                     <div className='h-full md:py-0 py-14 flex flex-col relative z-20'>
 
                         <a
@@ -71,20 +71,20 @@ export default function Connect() {
                             className='text-[#A5A5A7] hover:text-[#fff] flex flex-col transition-all duration-300'
                         >
                             <span
-                                className='underline transition-all duration-300 text-5xl lg:text-8xl sm:text-5xl h2'
+                                className='underline transition-all duration-300 text-4xl lg:text-8xl sm:text-5xl h2 break-normal'
                                 data-aos="fade-in"
                                 data-aos-delay="300"
                                 data-aos-easing="ease-in-sine"
                             >
-                                hello@daniel
+                                esuoladaniel002
                             </span>
                             <span
-                                className='underline transition-all duration-300 text-5xl lg:text-8xl sm:text-5xl h2'
+                                className='underline transition-all duration-300 text-4xl lg:text-8xl sm:text-5xl h2'
                                 data-aos="fade-in"
                                 data-aos-delay="400"
                                 data-aos-easing="ease-in-sine"
                             >
-                                esuola.com
+                                @gmail.com
                             </span>
                         </a>
 
@@ -95,7 +95,7 @@ export default function Connect() {
                             data-aos-delay="200"
                             data-aos-easing="ease-in-sine"
                         >
-                            I'm open to exploring freelance opportunities, but am also eager to hear about any other creative projects or inquiries you may have. Please feel free to reach out to me with any questions or ideas.
+                            I'm open to exploring freelance opportunities, but am also eager to hear about any other creative projects or inquiries you may have. 
                         </p>
                     </div>
                 </div>
