@@ -26,7 +26,7 @@ export default function Home() {
             {/* <Map /> */}
             <Awards />
             <Interest />
-            {/* <Project /> */}
+            <Project />
             <Connect />
         </div>
     )
