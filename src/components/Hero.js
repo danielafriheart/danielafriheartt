@@ -21,7 +21,7 @@ export default function Hero() {
                             data-aos-delay="200"
                             data-aos-easing="ease-in-sine"
                         >
-                            Esuola Daniel,
+                            Daniel Esuola,
                         </h1>
 
                         <p className='text-gray'

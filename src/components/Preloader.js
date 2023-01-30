@@ -7,12 +7,12 @@ export default function Preloader() {
     const year = date.getFullYear();
 
     return (
-        <div className='w-full h-screen lg:p-20 py-20 relative z-50 top-0 cursor-pointer bg-[#161616]'>
+        <section className='w-full h-screen lg:p-20 py-20 relative z-50 top-0 cursor-pointer bg-[#161616]'>
             <div className='text-[#fff] opacity-10 md:text-[10em] text-[2em] absolute md:right-20 right-5 bottom-0 text-right h2'>" A Journey  <br />of Creativity <br /> & Exploration. "</div>
             <div className=" w-[85vw] sm:w-[95vw] lg:w-[90vw] mx-auto h-full flex flex-col justify-between">
                 <div>
-                    <div className="h2 text-white text-3xl"> 
-                        Esuola Daniel
+                    <div className="h2 text-white text-3xl">
+                        Daniel Esuola
                     </div>
                     <div className="h2 text-white text-3xl flex">
                         Portfolio <BiCopyright /> {year}
@@ -30,6 +30,6 @@ export default function Preloader() {
                     A journey of curiosity and exploration.
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
