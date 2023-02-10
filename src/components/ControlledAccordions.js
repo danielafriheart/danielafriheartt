@@ -9,7 +9,6 @@ import Typography from '@mui/material/Typography';
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-    border: `none`,
     '&:not(:last-child)': {
         borderBottom: 0,
     },
@@ -20,14 +19,15 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color:'#ABB2BF' }} />}
         {...props}
+        sx={{
+            backgroundColor: "#1E1D22",
+            borderTop: '#9D84B8'
+        }}
     />
 ))(({ theme }) => ({
-    backgroundColor:
-        theme.palette.mode === 'dark'
-            ? 'rgba(255, 255, 255, .05)'
-            : 'rgba(0, 0, 0, .03)',
+    backgroundColor: 'none',
     flexDirection: 'row-reverse',
     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
         transform: 'rotate(90deg)',
@@ -38,7 +38,7 @@ const AccordionSummary = styled((props) => (
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-    backgroundColor:'#1E1D22',
+    backgroundColor: '#1E1D22',
     padding: theme.spacing(2),
     borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
@@ -53,11 +53,11 @@ export default function CustomizedAccordions({ accordionContent, accordionTitle 
     return (
         <div>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" className='bg-transparent'>
+                <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                     <Typography className='text-gray py-5'>{accordionTitle}</Typography>
                 </AccordionSummary>
                 <AccordionDetails className='border-b-primary-100 border'>
-                    <Typography className='text-gray py-5'>
+                    <Typography className='text-gray p-5'>
                         {accordionContent}
                     </Typography>
                 </AccordionDetails>
