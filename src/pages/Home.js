@@ -4,6 +4,7 @@ import Awards from '../components/Awards'
 import Connect from '../components/Connect'
 import Hero from '../components/Hero'
 import Interest from '../components/Interest'
+import Services from '../components/Services'
 import Map from '../components/Map'
 import Project from '../components/Project'
 
@@ -26,6 +27,7 @@ export default function Home() {
             {/* <Map /> */}
             <Awards />
             <Interest />
+            <Services/>
             <Project />
             <Connect />
         </div>
