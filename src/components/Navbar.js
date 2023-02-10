@@ -86,14 +86,14 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Nav */}
-      <div onClick={handleNavClose} className={`${open === true ? 'flex' : 'hidden'} h-screen glass top-0 absolute z-10 w-full md:hidden transition-all duration-300 px-5`}>
+      <div onClick={handleNavClose} className={`${open === true ? 'flex' : 'hidden'} h-screen glass top-0 absolute z-10 w-full md:hidden transition-all duration-300 p-5 pt-0`}>
 
         <div className="">
           <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[6%]" aria-controls='mobile-menu' aria-expanded='false'>
             <AiOutlineClose className={`${open === true ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavClose} />
           </button>
         </div>
-        <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-[70%] mt-auto bg-background w-screen shadow-2xl rounded-t-2xl">
+        <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-[70%] mt-auto bg-background w-screen shadow-2xl rounded-2xl">
 
           <ul className=''>
             <li className='gap-10 flex flex-col text-4xl'>
