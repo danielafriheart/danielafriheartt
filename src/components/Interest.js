@@ -18,7 +18,7 @@ export default function Interest() {
         cursor.classList.remove('clickAndDrag')
     }
 
-    
+
 
     const [tab, setNewTab] = useState(1);
 
@@ -48,7 +48,7 @@ export default function Interest() {
                                     data-aos-delay="100"
                                     data-aos-offset="0"
                                 >
-                                    03 
+                                    03
                                 </h1>
 
                                 <div>

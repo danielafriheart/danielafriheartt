@@ -17,26 +17,15 @@ export default function App() {
   const [loading, setLoading] = useState(false); //loader State
 
   useEffect(() => {
+
     setLoading(true);
     setTimeout(() => {
+
       setLoading(false);
+
     }, 3000) //3 Seconds timeout
+
   }, []);
-
-  // document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll('.link')
-  const cursor = document.querySelector('.cursor')
-
-  links.forEach(link => {
-    link.addEventListener("mouseenter", () => {
-      console.log(link);
-      cursor.classList.add("bigCursor");
-    });
-    link.addEventListener("mouseleave", () => {
-      cursor.classList.remove("bigCursor");
-    });
-  });
-  // });
 
   return (
     <>
@@ -48,11 +37,15 @@ export default function App() {
           <>
             <Navbar />
             <SideNav />
+
             <Routes>
+              
               <Route path='/' element={<Home />} />
               <Route path='/works' element={<Work />} />
               <Route path='/contact' element={<Contact />} />
+
             </Routes>
+
             <Footer />
           </>
       }

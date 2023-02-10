@@ -12,6 +12,21 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 
 export default function Navbar() {
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll('.link')
+    const cursor = document.querySelector('.cursor')
+
+    links.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+        console.log(link);
+        cursor.classList.add("bigCursor");
+      });
+      link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("bigCursor");
+      });
+    });
+  });
+
   //Mobile Navigation Toggler=================>>>>>>>>
   const [open, setOpen] = useState(false);
 
@@ -71,8 +86,15 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Nav */}
-      <div onClick={handleNavClose} className={`${open === true ? 'flex' : 'hidden'} h-screen glass top-0 absolute z-10 w-full md:hidden transition-all duration-300`}>
-        <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-full bg-background w-[70vw] shadow-2xl">
+      <div onClick={handleNavClose} className={`${open === true ? 'flex' : 'hidden'} h-screen glass top-0 absolute z-10 w-full md:hidden transition-all duration-300 px-5`}>
+
+        <div className="">
+          <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[6%]" aria-controls='mobile-menu' aria-expanded='false'>
+            <AiOutlineClose className={`${open === true ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavClose} />
+          </button>
+        </div>
+        <div className=" gap-32 flex flex-col px-10 py-20 justify-between h-[70%] mt-auto bg-background w-screen shadow-2xl rounded-t-2xl">
+
           <ul className=''>
             <li className='gap-10 flex flex-col text-4xl'>
               <NavLink activeclassname='active' to='/' className='font-light text-gray hover:text-white navLink relative hover:font-bold transition-all duration-300' onClick={handleNavClose}>
@@ -88,7 +110,7 @@ export default function Navbar() {
           </ul>
 
           <div className='items-center'>
-            <div className="flex flex-col gap-8 md:text-2xl text-xl justify-center items-end">
+            <div className="flex gap-8 md:text-2xl text-xl justify-center items-end">
               <a href='https://github.com/danielafriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><BsGithub size='1.5em' /><p></p></a>
 
               <a href='https://www.behance.net/danielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><BsBehance size='1.5em' /></a>
@@ -98,12 +120,9 @@ export default function Navbar() {
               <a href='https://twitter.com/DanielAfriheart' target='_blank' rel='noopener noreferrer' className='text-gray hover:text-white transition-all duration-300'><AiOutlineTwitter size='1.5em' /></a>
             </div>
           </div>
+
         </div>
-        <div className="">
-          <button className="ml-auto md:hidden absolute right-0 mt-[2em] mr-[6%]" aria-controls='mobile-menu' aria-expanded='false'>
-            <AiOutlineClose className={`${open === true ? 'flex' : 'hidden'} cursor-pointer text-white`} size='1.5em' onClick={handleNavClose} />
-          </button>
-        </div>
+
       </div>
     </div>
   )

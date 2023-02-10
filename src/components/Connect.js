@@ -8,6 +8,16 @@ import dots1 from "../assets/img/dots1.png";
 
 export default function Connect() {
 
+    const cursor = document.querySelector('.cursor'); //Cursor
+    const changeCursorCopy = () => {
+        cursor.classList.add('changeCursorCopy')
+    }
+    const defaultCursor = () => {
+        cursor.classList.remove('changeCursorCopy')
+    }
+
+
+
     return (
         <section className='lg:h-[65vh] h-full py-20 relative' data-scroll-section>
 
@@ -69,6 +79,8 @@ export default function Connect() {
                         <a
                             href='mailto:esuoladaniel002@gmail.com'
                             className='text-[#A5A5A7] hover:text-[#fff] flex flex-col transition-all duration-300'
+                            onMouseEnter={changeCursorCopy}
+                            onMouseLeave={defaultCursor}
                         >
                             <span
                                 className='underline transition-all duration-300 text-4xl lg:text-8xl sm:text-5xl h2 break-normal'
