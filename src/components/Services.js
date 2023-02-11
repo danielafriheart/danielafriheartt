@@ -59,7 +59,7 @@ export default function Services() {
                         data-aos="fade-up"
                         data-aos-delay="50"
                         data-aos-easing="ease-in-sine"
-                        className=" lg:mt-20 md:mt-20"
+                        className=" mt-20"
                     >
                         {
                             service.map((services, i) => {
