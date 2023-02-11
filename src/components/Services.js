@@ -8,17 +8,17 @@ export default function Services() {
         {
             id: 1,
             title: 'Front end development / engineering',
-            content: 'I plan, design, build, test and maintain scalable front end web applications.'
+            content: 'I specialize in scalable front-end web application development, including planning, design, build, testing and maintenance..'
         },
         {
             id: 2,
-            title: 'FreeCodeCamp',
-            content: 'JavaScript Algorithms & Data Structures'
+            title: 'Intercation design / animation',
+            content: 'I collaborate with designers to execute web app and design system animations and interactions.'
         },
         {
             id: 3,
-            title: 'FreeCodeCamp',
-            content: 'JavaScript Algorithms & Data Structures'
+            title: 'Creative implementation',
+            content: 'I design optimized layouts and interactions for performance and usability.'
         },
     ];
     //=============================================>>>>>>>>>>>>>>
@@ -55,7 +55,12 @@ export default function Services() {
 
                 <div className="grid md:grid-cols-[20%,80%] ">
                     <div className=""></div>
-                    <div className=" lg:mt-20 md:mt-20">
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-in-sine"
+                        className=" lg:mt-20 md:mt-20"
+                    >
                         {
                             service.map((services, i) => {
                                 return (

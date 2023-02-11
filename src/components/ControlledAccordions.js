@@ -38,14 +38,12 @@ export default function ControlledAccordions({ accordionTitle, accordionContent 
                     >
                         <span className="text-[1.2em]"> {accordionTitle} </span>
                     </Typography>
-                    {/* <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography> */}
-
                 </AccordionSummary>
 
                 <AccordionDetails>
                     <Typography
                         sx={{ fontFamily: 'Quicksand Light' }}
-                        className='pb-10 w-[50%]'
+                        className='pb-10 lg:w-[70%]'
                     >
                         <span className="text-[1.2em]"> {accordionContent} </span>
                     </Typography>
