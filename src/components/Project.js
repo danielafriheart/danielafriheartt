@@ -44,7 +44,7 @@ function Project() {
                                     data-aos-delay="100"
                                     data-aos-offset="0"
                                 >
-                                    04
+                                    05
                                 </h1>
 
                                 <h2 className='text-white'

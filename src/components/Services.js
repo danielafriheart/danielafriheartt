@@ -33,7 +33,7 @@ export default function Services() {
                         data-aos-delay="100"
                         data-aos-offset="0"
                     >
-                        02
+                        04
                     </h1>
 
                     <div>
