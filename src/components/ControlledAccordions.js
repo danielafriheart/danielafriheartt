@@ -1,83 +1,57 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
-import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary from '@mui/material/AccordionSummary';
-import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { AiOutlineMinus } from "react-icons/ai"
+import { AiOutlinePlus } from "react-icons/ai"
 
-const Accordion = styled((props) => (
-    <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
-    '&:not(:last-child)': {
-        borderBottom: 0,
-    },
-    '&:before': {
-        display: 'none',
-    },
-}));
+export default function ControlledAccordions({ accordionTitle, accordionContent }) {
+    const [expanded, setExpanded] = React.useState(false);
 
-const AccordionSummary = styled((props) => (
-    <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: '#ABB2BF' }} />}
-        {...props}
-        sx={{
-            backgroundColor: "#1E1D22",
-        }}
-    />
-))(({ theme }) => ({
-    backgroundColor: 'none',
-    flexDirection: 'row',
-    '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-        transform: 'rotate(90deg)',
-    },
-    '& .MuiAccordionSummary-content': {
-        marginLeft: theme.spacing(1),
-    },
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-    backgroundColor: '#1E1D22',
-    padding: theme.spacing(2),
-    borderTop: 'none',
-    fontSize:'12em'
-}));
-
-export default function CustomizedAccordions({ accordionContent, accordionTitle, id }) {
-    const [expanded, setExpanded] = React.useState('panel1');
-
-    const handleChange = (panel) => (event, newExpanded) => {
-        setExpanded(newExpanded ? panel : false);
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
     };
 
     return (
+        <div>
+            <Accordion
+                expanded={expanded === 'panel1'} onChange={handleChange('panel1')}
+                sx={{
+                    backgroundColor: "#1E1D22",
+                    color: "#ABB2BF",
+                    fontSize: '1.2em'
+                }}
+                className="border border-x-0 border-t-primary-100 border-b-primary-100 border-opacity-25"
+            >
 
-        <div div className='border border-x-0 border-t-primary-100 border-b-primary-100 border-opacity-25 cursor-pointer' >
-            {
-                id < 2 ?
-                    <Accordion Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray py-10 p'>{accordionTitle}</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray pb-10 w-[50%] p'>
-                                {accordionContent}
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    :
-                    <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray py-10 p'>{accordionTitle}</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray pb-10 w-[50%] p'>
-                                {accordionContent}
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
+                <AccordionSummary
+                    expandIcon={expanded ? <AiOutlineMinus color='gray' /> : <AiOutlinePlus color='gray' />}
+                    aria-controls="panel1bh-content"
+                    id="panel1bh-header"
+                >
 
-            }
-        </div >
+                    <Typography
+                        sx={{ width: '100%', flexShrink: 0, fontFamily: 'Quicksand Light' }}
+                        className='py-10 '
+                    >
+                        <span className="text-[1.2em]"> {accordionTitle} </span>
+                    </Typography>
+                    {/* <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography> */}
+
+                </AccordionSummary>
+
+                <AccordionDetails>
+                    <Typography
+                        sx={{ fontFamily: 'Quicksand Light' }}
+                        className='pb-10 w-[50%]'
+                    >
+                        <span className="text-[1.2em]"> {accordionContent} </span>
+                    </Typography>
+                </AccordionDetails>
+
+            </Accordion>
+        </div>
     );
 }

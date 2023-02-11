@@ -7,8 +7,8 @@ export default function Services() {
     const service = [
         {
             id: 1,
-            title: 'FreeCodeCamp',
-            content: 'JavaScript Algorithms & Data Structures'
+            title: 'Front end development / engineering',
+            content: 'I plan, design, build, test and maintain scalable front end web applications.'
         },
         {
             id: 2,
@@ -68,7 +68,6 @@ export default function Services() {
                                 )
                             })
                         }
-
                     </div>
                 </div>
             </div>
