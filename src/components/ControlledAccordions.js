@@ -19,16 +19,15 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color:'#ABB2BF' }} />}
+        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: '#ABB2BF' }} />}
         {...props}
         sx={{
             backgroundColor: "#1E1D22",
-            borderTop: '#9D84B8'
         }}
     />
 ))(({ theme }) => ({
     backgroundColor: 'none',
-    flexDirection: 'row-reverse',
+    flexDirection: 'row',
     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
         transform: 'rotate(90deg)',
     },
@@ -40,10 +39,11 @@ const AccordionSummary = styled((props) => (
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     backgroundColor: '#1E1D22',
     padding: theme.spacing(2),
-    borderTop: '1px solid rgba(0, 0, 0, .125)',
+    borderTop: 'none',
+    fontSize:'12em'
 }));
 
-export default function CustomizedAccordions({ accordionContent, accordionTitle }) {
+export default function CustomizedAccordions({ accordionContent, accordionTitle, id }) {
     const [expanded, setExpanded] = React.useState('panel1');
 
     const handleChange = (panel) => (event, newExpanded) => {
@@ -51,17 +51,33 @@ export default function CustomizedAccordions({ accordionContent, accordionTitle 
     };
 
     return (
-        <div>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography className='text-gray py-5'>{accordionTitle}</Typography>
-                </AccordionSummary>
-                <AccordionDetails className='border-b-primary-100 border'>
-                    <Typography className='text-gray p-5'>
-                        {accordionContent}
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-        </div>
+
+        <div div className='border border-x-0 border-t-primary-100 border-b-primary-100 border-opacity-25 cursor-pointer' >
+            {
+                id < 2 ?
+                    <Accordion Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray py-10 p'>{accordionTitle}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray pb-10 w-[50%] p'>
+                                {accordionContent}
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    :
+                    <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray py-10 p'>{accordionTitle}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography className='text-[1.2em] lg:text-[2em] sm:text-[0.95em] text-gray pb-10 w-[50%] p'>
+                                {accordionContent}
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+
+            }
+        </div >
     );
 }
