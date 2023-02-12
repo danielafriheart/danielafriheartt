@@ -7,12 +7,15 @@ import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default function SimpleSnackbar() {
-    const upwork = 'https://www.upwork.com/freelancers/~01b269e156cff4615c'
+
+    const upwork = ''
 
     useEffect(() => {
+
         setTimeout(() => {
             handleClick()
         }, 10)
+
     }, [])
 
     const [open, setOpen] = React.useState(false);
@@ -25,27 +28,13 @@ export default function SimpleSnackbar() {
         if (reason === 'clickaway') {
             return;
         }
-
         setOpen(false);
     };
 
     const action = (
         <React.Fragment>
-            {/* <Button
-                size="medium"
-                onClick={handleClose}
-
-                sx={{
-                    backgroundColor: '#3C3645',
-                    marginLeft: '10em',
-                    color: '#CF95FC',
-                }}
-            >
-
-                Upwork
-            </Button> */}
             <NavLink
-                to={upwork}
+                // to={'https://www.upwork.com/freelancers/~01b269e156cff4615c'}
                 className='bg-primary bg-opacity-25 text-white p-2 px-5 rounded-md ml-32'
             >
                 Upwork

@@ -23,9 +23,9 @@ export default function Home() {
 
     return (
         <div id='container' data-scroll-container>
-            <div className='hidden lg:flex'>
+            {/* <div className='hidden lg:flex'>
                 <SimpleSnackbar />
-            </div>
+            </div> */}
             <Hero />
             <About />
             {/* <Map /> */}
