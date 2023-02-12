@@ -7,6 +7,7 @@ import Interest from '../components/Interest'
 import Services from '../components/Services'
 import Map from '../components/Map'
 import Project from '../components/Project'
+import SimpleSnackbar from '../components/SnackBar'
 
 export default function Home() {
     useEffect(() => {
@@ -22,6 +23,7 @@ export default function Home() {
 
     return (
         <div id='container' data-scroll-container>
+            <SimpleSnackbar/>
             <Hero />
             <About />
             {/* <Map /> */}
