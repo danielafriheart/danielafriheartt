@@ -4,12 +4,15 @@ import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function SimpleSnackbar() {
+    const upwork = 'https://www.upwork.com/freelancers/~01b269e156cff4615c'
+
     useEffect(() => {
         setTimeout(() => {
             handleClick()
-        }, 10000)
+        }, 10)
     }, [])
 
     const [open, setOpen] = React.useState(false);
@@ -28,34 +31,39 @@ export default function SimpleSnackbar() {
 
     const action = (
         <React.Fragment>
-            <Button
+            {/* <Button
                 size="medium"
                 onClick={handleClose}
 
                 sx={{
-                    backgroundColor: '#9D84B8',
-                    // padding: '0.5em',
-                    color: '#000',
+                    backgroundColor: '#3C3645',
+                    marginLeft: '10em',
+                    color: '#CF95FC',
                 }}
             >
 
-                Hire
-            </Button>
+                Upwork
+            </Button> */}
+            <NavLink
+                to={upwork}
+                className='bg-primary bg-opacity-25 text-white p-2 px-5 rounded-md ml-32'
+            >
+                Upwork
+            </NavLink>
         </React.Fragment>
     );
 
     return (
-        <div className='relative z-50' >
-
+        <div className='relative z-10' >
             <Snackbar
                 open={open}
-                autoHideDuration={10000}
+                autoHideDuration={1000000000}
                 onClose={handleClose}
-                message="Open to collaborations and freelance opportunities"
+                message="I'm open to exploring freelance opportunities"
                 action={action}
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
                 sx={{
-                   minWidth: '40vw'
+                    minWidth: '40vw'
                 }}
             />
         </div>

@@ -8,7 +8,7 @@ export default function Hero() {
 
 
     return (
-        <section className='flex justify-center items-end bg-gray-100 relative lg:h-[100vh] md:h-[100vh] h-full'>
+        <section className='flex justify-center items-end bg-gray-100 relative z-20 lg:h-[100vh] md:h-[100vh] h-full'>
 
             <div className="md:flex hidden rectangle h-full w-[20em] bg-primary-100 lg:right-[20em] md:right-[10em] sm:right-[3em] absolute z-10"></div>
             <div className=" w-[90vw] sm:w-[95vw] lg:w-[80vw] md:h-[70vh] lg:h-[70vh] sm:h-[75vh] mx-auto flex lg:items-end mt-[10em] md:mt-[10em] lg:mt-[5em] sm:mt-[5em]">

@@ -23,13 +23,15 @@ export default function Home() {
 
     return (
         <div id='container' data-scroll-container>
-            <SimpleSnackbar/>
+            <div className='hidden lg:flex'>
+                <SimpleSnackbar />
+            </div>
             <Hero />
             <About />
             {/* <Map /> */}
             <Awards />
             <Interest />
-            <Services/>
+            <Services />
             <Project />
             <Connect />
         </div>
