@@ -12,7 +12,7 @@ export default function Services() {
         },
         {
             id: 2,
-            title: 'Intercation design / animation',
+            title: 'Interaction design / animation',
             content: 'I collaborate with designers to execute web app and design system animations and interactions.'
         },
         {
